@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <!-- Font-Awesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- Hover CSS -->
-    <link href="css/hover.css" rel="stylesheet" media="all">
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">   
 </head>
@@ -49,11 +47,11 @@
       <div class="row">
         <div class="col s8 offset-s2">
           <ul id="nav-mobile" class="navbar hide-on-med-and-down">
-            <li><a href="#print" class="nav-link"><i class="nav-icon fa fa-picture-o"></i>Print Design</a></li>
-            <li><a href="#web" class="nav-link"><i class="nav-icon fa fa-css3"></i>Web Design</a></li>
-            <li><a href="#development" class="nav-link"><i class="nav-icon fa fa-code"></i>Development</a></li>
-            <li><a href="#repos" class="nav-link"><i class="nav-icon fa fa-github-alt"></i>Repos</a></li>
-            <li><a href="#contact" class="nav-link"><i class="nav-icon fa fa-envelope-o"></i>Contact</a></li>
+            <li><a href="#print" class="nav-link smoothScroll"><i class="nav-icon fa fa-picture-o"></i>Print Design</a></li>
+            <li><a href="#web" class="nav-link smoothScroll"><i class="nav-icon fa fa-css3"></i>Web Design</a></li>
+            <li><a href="#dev" class="nav-link smoothScroll"><i class="nav-icon fa fa-code"></i>Development</a></li>
+            <li><a href="#repos" class="nav-link smoothScroll"><i class="nav-icon fa fa-github-alt"></i>Repos</a></li>
+            <li><a href="#contact" class="nav-link smoothScroll"><i class="nav-icon fa fa-envelope-o"></i>Contact</a></li>
           </ul>
         </div>
       </div> 
@@ -63,15 +61,57 @@
 
   <main>
 
-  <div class="container">
-    
-    <div class="row">
+    <div class="container">
+
+      <div id="dev" class="row1 scrollspy">
+        <h1>Development</h1>
+      </div>
+   
+      <div id="web" class="row1 scrollspy">
+        <h1>Web Design</h1>
+      </div>
+   
+      <div id="print" class="row1 scrollspy">
+        <h1>Print Design</h1>
+      </div>
+   
+      <div id="repos" class="row1 scrollspy">
+        <h1>Gitub Repositories</h1>
+
+      </div>
+
+      <div id="contact" class="row1 scrollspy">
+         <h1>Contact Me</h1>
+      </div>
 
     </div>
-  </div>
-  </main
 
-  <footer>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
   </footer>
 
 
@@ -80,6 +120,8 @@
   <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+  <!-- SmoothScroll -->
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
   <!-- Custom JS  -->
   <script src="js/main.js" type="text/javascript"></script>
 

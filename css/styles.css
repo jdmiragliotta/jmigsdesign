@@ -1,3 +1,14 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+
 /*---------------------------------------------------
 NAV STYLES
 ---------------------------------------------------*/
@@ -26,5 +37,10 @@ ul.navbar {
     margin-bottom: 8px;
     margin-top: 8px;
     position: relative;
+}
+
+.row1 {
+  height: 200px;
+  background-color: blue;
 }
 

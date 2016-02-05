@@ -11,6 +11,4 @@ $(document).ready(function(){
   $(".nav-link").mouseleave(function(){
     $(this).children().animate({bottom: "0px"});
     });
-
-
 });
