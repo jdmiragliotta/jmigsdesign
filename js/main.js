@@ -4,4 +4,13 @@ $(document).ready(function(){
     height: 500,
     indicators: false
   });
+
+  $(".nav-link").mouseenter(function(){
+    $(this).children().filter(':not(:animated)').animate({bottom: "5px"});
+    });
+  $(".nav-link").mouseleave(function(){
+    $(this).children().animate({bottom: "0px"});
+    });
+
+
 });
