@@ -8,7 +8,7 @@ body {
   main {
     flex: 1 0 auto;
     position: relative;
-    background-color: red;
+    background-color: #f2f2f2;
   }
 
 /*---------------------------------------------------
@@ -17,11 +17,9 @@ HEADER STYLES
 
   header{
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
   }
-
-
 
 /*---------------------------------------------------
 NAV STYLES
@@ -31,14 +29,18 @@ nav {
   height: 70px;
   z-index: 1000;
   background-color: transparent;
-  box-shadow: 0 2px 3px rgba(0,0,0,.4);;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+  transition:top 0.5s ease;
+  transition: background-color 0.5s ease;
+
 }
 
 .scroll{
   position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   margin-top: 0;
+  background-color: #333;
 }
 
 li {
@@ -64,4 +66,5 @@ ul.navbar {
   height: 200px;
   background-color: blue;
 }
+
 
