@@ -2,11 +2,25 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+    padding-top: 500px;
+    }
 
   main {
     flex: 1 0 auto;
+    position: relative;
+    background-color: red;
   }
+
+/*---------------------------------------------------
+HEADER STYLES
+---------------------------------------------------*/
+
+  header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
 
 
 /*---------------------------------------------------
@@ -15,9 +29,16 @@ NAV STYLES
 nav {
   margin-top: -70px;
   height: 70px;
-  position: relative;
   z-index: 1000;
   background-color: transparent;
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);;
+}
+
+.scroll{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 0;
 }
 
 li {

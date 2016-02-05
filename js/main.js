@@ -11,4 +11,12 @@ $(document).ready(function(){
   $(".nav-link").mouseleave(function(){
     $(this).children().animate({bottom: "0px"});
     });
+
+  $(window).scroll(function() {
+    if( $(this).scrollTop() > $("header").height()-70) {
+      $("nav").addClass("scroll");
+    } else {
+      $("nav").removeClass("scroll");
+    }
+  });
 });
