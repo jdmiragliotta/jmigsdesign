@@ -1,0 +1,25 @@
+/*---------------------------------------------------
+NAV STYLES
+---------------------------------------------------*/
+nav {
+  margin-top: -64px;
+  position: relative;
+  z-index: 1000;
+  background-color: transparent;
+}
+
+li {
+    float: left;
+    width: 20%;
+}
+ul.navbar {
+    text-align: center;
+    overflow: auto;
+    width: 100%;
+}
+
+.nav-icon {
+    height: 0px;
+    display: block;
+    font-size: 20px;
+}
