@@ -45,6 +45,20 @@ SLIDER STYLES
   left: 3%;
 }
 
+#slogan{
+  left: -7%;
+  top: 57%;
+}
+
+#creativity{
+  font-family: 'Fredericka the Great', cursive;
+}
+
+#slogan-code{
+  top: 56%;
+  left: 3%;
+  
+}
 /*---------------------------------------------------
 NAV STYLES
 ---------------------------------------------------*/
