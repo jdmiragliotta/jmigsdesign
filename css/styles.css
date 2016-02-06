@@ -1,8 +1,14 @@
+/*---------------------------------------------------
+GLOBAL STYLES
+---------------------------------------------------*/
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     padding-top: 500px;
+    font-family: 'Marcellus', serif;  
+    color: #fff;
     }
 
   main {
@@ -14,33 +20,84 @@ body {
 /*---------------------------------------------------
 HEADER STYLES
 ---------------------------------------------------*/
+header{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.logo{
+  font-size: 20px;
+  color: #fff;
+}
+.design-logo{
+  color: #a90004;
+}
 
-  header{
-    position: fixed;
-    top: 0px;
-    width: 100%;
-  }
+
+/*---------------------------------------------------
+SLIDER STYLES
+---------------------------------------------------*/
+.slider .slides li .caption {
+  top: 40%;
+}
+
+#jmigsdesign {
+  left: 3%;
+}
 
 /*---------------------------------------------------
 NAV STYLES
 ---------------------------------------------------*/
+.mini-header {
+  height: 80px;
+  transition: all .7s ease;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1500,
+}
+
+.logo-container {
+  height: 80px;
+  transition: all .4s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1500,
+}
+
+.logo{
+  margin: 0 auto;
+}
+
+.mini-header-scroll{
+  height:40px;
+}
+
 nav {
-  margin-top: -70px;
-  height: 70px;
-  z-index: 1000;
+  margin-top: -60px;
+  height: 60px;
+  z-index: 1501;
   background-color: transparent;
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
-  transition:top 0.5s ease;
-  transition: background-color 0.5s ease;
+  transition:margin-bottom 0.5s ease;
+  transition: background-color 0.4s ease;
+}
 
+nav ul a:hover{
+  background-color: transparent;
 }
 
 .scroll{
   position: fixed;
-  top: 0px;
+  top: 40px;
   width: 100%;
   margin-top: 0;
-  background-color: #333;
+}
+
+.scroll-color{
+  background-color: #423F3F;
 }
 
 li {
@@ -51,14 +108,15 @@ ul.navbar {
     text-align: center;
     overflow: auto;
     width: 100%;
+    
 }
 
 .nav-icon {
     height: 0px;
     display: block;
     font-size: 20px;
-    margin-bottom: 8px;
-    margin-top: 8px;
+   
+    margin-top: 10px;
     position: relative;
 }
 

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.slider').slider({
+  $(".slider").slider({
     full_width: true,
     height: 500,
     indicators: false
@@ -8,7 +8,7 @@ $(document).ready(function(){
 
   // ADDS ANIMATION TO NAVBAR LINKS
   $(".nav-link").mouseenter(function(){
-    $(this).children().filter(':not(:animated)').animate({bottom: "5px"});
+    $(this).children().filter(":not(:animated)").animate({bottom: "5px"});
     });
   $(".nav-link").mouseleave(function(){
     $(this).children().animate({bottom: "0px"});
@@ -16,30 +16,30 @@ $(document).ready(function(){
 
   // CREATES STICKY NAVBAR
   $(window).scroll(function() {
-    if( $(this).scrollTop() > $("header").height()-70) {
+    if( $(this).scrollTop() > $("header").height()-105) {
       $("nav").addClass("scroll");
     } else {
       $("nav").removeClass("scroll");
     }
+    if( $(this).scrollTop() > $("header").height()-157) {
+      $("nav").addClass("scroll-color");
+    } else {
+      $("nav").removeClass("scroll-color");
+    }
   });
 
-  // NAVBAR COLOR CHANGE
-  $(function() {
-    $(window).width();
-    var width = $(window).width();
-    var scroll_start = 0;
-
-    if(width <= 480){
-      $(window).scroll(function() { 
-        scroll_start = $(this).scrollTop();
-        if(scroll_start = $("header").height()-70)  {
-          $('nav').css('background-color', 'rgba(0,53,95,1)');
-        }else {
-          $('nav').css('background-color', 'transparent');
-        }
-      });
+  // MINIMIZES TOP BAR
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 362 ) {
+      $(".logo-container").addClass("mini-header-scroll");
     }
-  })
+    if (scroll <= 362 ) {
+      $(".logo-container").removeClass("mini-header-scroll");
+   }
+
+});
+  
 
 
 
