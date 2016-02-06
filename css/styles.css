@@ -125,4 +125,9 @@ ul.navbar {
   background-color: blue;
 }
 
-
+.anchor:before {
+  content:"";
+  display:block;
+  height:100px; 
+  
+}
