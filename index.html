@@ -12,7 +12,9 @@
     <!-- Mobile viewport optimized -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!--Google Font-->
-    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Marcellus' rel='stylesheet' type='text/css'>    
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Marcellus' rel='stylesheet' type='text/css'>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <!-- Font-Awesome CSS -->
@@ -67,11 +69,11 @@
       <div class="row">
         <div class="col s8 offset-s2">
           <ul id="nav-mobile" class="navbar hide-on-med-and-down">
-            <li><a href="#print" class="nav-link smoothScroll"><i class="nav-icon fa fa-picture-o"></i>Print Design</a></li>
-            <li><a href="#web" class="nav-link smoothScroll"><i class="nav-icon fa fa-css3"></i>Web Design</a></li>
-            <li><a href="#dev" class="nav-link smoothScroll"><i class="nav-icon fa fa-code"></i>Development</a></li>
-            <li><a href="#repos" class="nav-link smoothScroll"><i class="nav-icon fa fa-github-alt"></i>Repos</a></li>
-            <li><a href="#contact" class="nav-link smoothScroll"><i class="nav-icon fa fa-envelope-o"></i>Contact</a></li>
+            <li class="navlink"><a href="#print" class="nav-link smoothScroll"><i class="nav-icon fa fa-picture-o"></i>Design</a></li>
+            <li class="navlink"><a href="#dev" class="nav-link smoothScroll"><i class="nav-icon fa fa-code"></i>Development</a></li>
+            <li class="navlink"><a href="#repos" class="nav-link smoothScroll"><i class="nav-icon fa fa-github-alt"></i>Repos</a></li>
+            <li class="navlink"><a href="#skills" class="nav-link smoothScroll"><i class="nav-icon fa fa-wrench"></i>Skills</a></li>
+            <li class="navlink"><a href="#contact" class="nav-link smoothScroll"><i class="nav-icon fa fa-envelope-o"></i>Contact</a></li>
           </ul>
         </div>
       </div> 
@@ -86,12 +88,6 @@
           <h1>Development</h1>
         </div>
       </div>
-     
-      <div class="row">
-        <div id="web" class="anchor">
-          <h1>Web Design</h1>
-        </div>
-      </div>
 
       <div class="row">
         <div id="print" class="anchor">
@@ -104,36 +100,72 @@
           <h1>Gitub Repositories</h1>
         </div>
       </div>
+
+      <div class="row">
+        <div id="skills" class="anchor">
+           <h1>Skills</h1>
+        </div>
+      </div>
+
       <div class="row">
         <div id="contact" class="anchor">
            <h1>Contact</h1>
+           <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Telephone</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Message</label>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-
   </main>
-
   <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
+          <h6 class="white-text">JMIGSDESIGN</h6>
           <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
+          <h6 class="white-text">Follow Me</h6>
+          <div class="col s6">
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Twitter</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+            </ul>
+          </div>
+          <div class="col s6">
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Stack Overflow</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      © 2014 Copyright Text
+      &copy; 2016 Jeremy Miragliotta | JMigsDesign.com
       <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
       </div>
     </div>

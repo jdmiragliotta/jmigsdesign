@@ -9,6 +9,7 @@ body {
     padding-top: 500px;
     font-family: 'Marcellus', serif;  
     color: #fff;
+
     }
 
   main {
@@ -57,8 +58,9 @@ SLIDER STYLES
 #slogan-code{
   top: 56%;
   left: 3%;
-  
 }
+
+
 /*---------------------------------------------------
 NAV STYLES
 ---------------------------------------------------*/
@@ -114,7 +116,7 @@ nav ul a:hover{
   background-color: #423F3F;
 }
 
-li {
+li.navlink {
     float: left;
     width: 20%;
 }
@@ -144,4 +146,20 @@ ul.navbar {
   display:block;
   height:100px; 
   
+}
+
+/*---------------------------------------------------
+FOOTER STYLES
+---------------------------------------------------*/
+footer{
+  z-index: 2;
+}
+
+footer.page-footer{
+  background-color: #423F3F;
+  margin-top:0;
+}
+
+footer.page-footer .footer-copyright{
+  background-color: rgba(51,51,51,1);
 }
