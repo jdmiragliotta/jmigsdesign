@@ -28,14 +28,35 @@ $(document).ready(function(){
   });
 
   // MINIMIZES TOP BAR
-  $(window).scroll(function(){
-    var scroll = $(window).scrollTop();
-    if (scroll > 362 ) {
-      $(".logo-container").addClass("mini-header-scroll");
-    }
-    if (scroll <= 362 ) {
-      $(".logo-container").removeClass("mini-header-scroll");
-   }
+  // $(window).scroll(function(){
+  //   var scroll = $(window).scrollTop();
+  //   if (scroll > 362 ) {
+  //     $(".logo-container").addClass("mini-header-scroll");
+  //   }
+  //   if (scroll <= 362 ) {
+  //     $(".logo-container").removeClass("mini-header-scroll");
+  //  }
+
+  // $(window).scroll(function() {
+  //   var scrollDis = $(this).scrollTop();
+  //   var currentPos = $('#nav-name').scrollTop();
+  //   if(scrollDis > 362) {
+  //     $('#nav-name').css('top', 120 - scrollDis);
+  //     $('#nav-name').css('font-size', 30 - (scrollDis/6));
+  //   } else if(scrollDis > 160) {
+  //     $('#nav-name').css('top', -22);
+  //   }
+  // });
+
+  $(window).scroll(function() {
+  if ($(document).scrollTop() > 362) {
+    $('.mini-header').addClass('shrink');
+  } else {
+    $('.mini-header').removeClass('shrink');
+  }
+});
+
+  $(".scrollspy").scrollSpy();
 
 });
   
@@ -70,6 +91,6 @@ $(document).ready(function(){
 
 
 
-});
+
 
 

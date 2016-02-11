@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <!-- Font-Awesome CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- DEVICON CSS -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet">   
 </head>
@@ -26,7 +28,7 @@
 
   <div class="mini-header">
     <div class="logo-container valign-wrapper">
-      <a href="#index" class="logo valign smoothScroll">JMIGS<span class="design-logo">DESIGN</span></a>
+      <a href="#index" id="nav-name" class="logo valign smoothScroll">JMIGS<span class="design-logo">DESIGN</span></a>
     </div>
   </div>
   <header>
@@ -73,7 +75,7 @@
             <li class="navlink"><a href="#dev" class="nav-link smoothScroll"><i class="nav-icon fa fa-code"></i>Development</a></li>
             <li class="navlink"><a href="#repos" class="nav-link smoothScroll"><i class="nav-icon fa fa-github-alt"></i>Repos</a></li>
             <li class="navlink"><a href="#skills" class="nav-link smoothScroll"><i class="nav-icon fa fa-wrench"></i>Skills</a></li>
-            <li class="navlink"><a href="#contact" class="nav-link smoothScroll"><i class="nav-icon fa fa-envelope-o"></i>Contact</a></li>
+            <li class="navlink"><a href="#contact" class="nav-link smoothScroll "><i class="nav-icon fa fa-envelope-o"></i>Contact</a></li>
           </ul>
         </div>
       </div> 
@@ -84,7 +86,7 @@
 
     <div class="container">
       <div class="row">
-        <div id="dev" class="anchor">
+        <div id="dev" class="anchor scrollspy">
           <h1>Development</h1>
         </div>
       </div>
@@ -104,6 +106,9 @@
       <div class="row">
         <div id="skills" class="anchor">
            <h1>Skills</h1>
+           <div class="col l2 skill-icons">
+
+           </div>
         </div>
       </div>
 
@@ -115,7 +120,7 @@
               <div class="row">
                 <div class="input-field col l6 s12">
                   <i class="material-icons prefix">account_circle</i>
-                  <input id="icon_prefix" type="text" class="validate">
+                  <input id="icon_prefix" type="text" class="validate" required="" aria-required="true">
                   <label for="icon_prefix">Name</label>
                 </div>
                 <div class="input-field col l6 s12">
