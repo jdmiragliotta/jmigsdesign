@@ -69,7 +69,7 @@ SLIDER STYLES
 
 
 /*---------------------------------------------------
-NAV STYLES
+MINI-HEADER STYLES
 ---------------------------------------------------*/
 .mini-header {
   height: 80px;
@@ -96,7 +96,8 @@ NAV STYLES
   font-size: 30px;
 }
 
-.mini-header a {
+.mini-header a.logo {
+  text-align: center;
   font-size: 25px;
   padding-bottom: 20px ;
   padding-top: 20px ;
@@ -104,13 +105,60 @@ NAV STYLES
   transition: all 0.6s ease;
 }
 
-.mini-header.shrink a {
+.mini-header a{
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px ;
+  padding-top: 20px ;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.mini-header.shrink a.logo {
   font-size: 18px;
   padding-bottom: 50px;
   padding-top: 10px;
 }
 
-nav {
+.mini-header.shrink a {
+  font-size: 12px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.mini-header.shrink li {
+  width: 30px;
+}
+ 
+
+.social-nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.social-nav>li {
+    float: right;
+    width: 40px;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.social-nav>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/*---------------------------------------------------
+NAV STYLES
+---------------------------------------------------*/
+nav{
   margin-top: -60px;
   height: 60px;
   z-index: 1501;

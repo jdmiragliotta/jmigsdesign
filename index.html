@@ -2,12 +2,12 @@
 <html>
 <head>
   <title>JMIGSDESIGN | Design and Web Development Portfolio of Jeremy Miragliotta</title>
-  <meta name='description' content='>
+  <meta name='description' content=''>
     <meta property='og:title' content='JMIGSDESIGN | Home'>
     <meta property='og:type' content='page'>
     <meta property='og:url' content='jmigsdesign.com/index.php'>
     <meta property='og:image' content='images/shared_logo.png'>
-    <meta property='og:description' content='The portfolio of Graphic Designer Jeremy Miragliotta.'>
+    <meta property='og:description' content='The portfolio of Graphic Designer Jeremy Miragliotta'>
     
     <!-- Mobile viewport optimized -->
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -25,9 +25,23 @@
     <link href='css/styles.css' rel='stylesheet'>   
 </head>
 <body>
-  <div class='mini-header'>
+  <div class='row mini-header'>
     <div class='logo-container valign-wrapper'>
-      <a href='#index' id='nav-name' class='logo valign smoothScroll'>JMIGS<span class='design-logo'>DESIGN</span></a>
+      <div class='col l4 offset-l4'>
+        <a href='#index' id='nav-name' class='logo valign smoothScroll'>JMIGS<span class='design-logo'>DESIGN</span></a>
+      </div>
+      <div class="col l4">
+        <div class=''>
+          <ul class='social-nav right'>
+            <li><a href="http://facebook.com/jmigsdesign" target="_blank" class="social-reset"><span class="fa fa-facebook-official fa-lg"></span></a></li>
+            <li><a href="http://instagram.com/jmigsdesign" target="_blank"><span class="fa fa-instagram fa-lg"></span></a></li>
+            <li><a href="https://twitter.com/jmigsdesign" target="_blank"><span class="fa fa-twitter fa-lg"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/jeremymiragliotta" target="_blank"><span class="fa fa-linkedin-square fa-lg"></span></a></li>
+            <li><a href="https://github.com/jdmiragliotta" target="_blank"><span class="fa fa-github fa-lg"></span></a></li>
+            <li><a href="http://stackoverflow.com/users/5510697/jdmiragliotta" target="_blank"><span class="fa fa-stack-overflow fa-lg"></span></a></li>
+          </ul><!-- end nav pull-right --> 
+        </div>
+      </div>
     </div>
   </div>
   <header>
@@ -68,7 +82,7 @@
   <!--End Slider -->
     <!-- Navbar -->
     
-    <nav id='nav'>  
+    <nav id='nav' class='main-nav'>  
       <div class='row'>
         <div class='col s8 offset-s2'>
           <ul id='nav-mobile' class='navbar hide-on-med-and-down'>
