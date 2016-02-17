@@ -26,14 +26,16 @@ $(document).ready(function(){
       $('nav').removeClass('scroll-color');
     }
   });
-  // MINIMIZED LOGO AND SOCIAL LINKS
+
   $(window).scroll(function() {
-  if ($(document).scrollTop() > 362) {
-    $('.mini-header').addClass('shrink');
-  } else {
-    $('.mini-header').removeClass('shrink');
-  }
-});
+    if ($(document).scrollTop()) {
+      $('#slide-block').addClass('block');
+    } else {
+      $('#slide-block').removeClass('block');
+    }
+  });
+
+
 
 
 });

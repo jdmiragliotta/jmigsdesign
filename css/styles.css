@@ -67,6 +67,16 @@ SLIDER STYLES
   left: 3%;
 }
 
+#slide-block{
+  height: 500px;
+  transition: all .7s ease;
+  position: fixed;
+}
+
+.block{
+  background-color: #000;
+}
+
 
 /*---------------------------------------------------
 MINI-HEADER STYLES
@@ -107,7 +117,7 @@ MINI-HEADER STYLES
 
 .mini-header a{
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 20px ;
   padding-top: 20px ;
   -webkit-transition: all 0.6s ease;
