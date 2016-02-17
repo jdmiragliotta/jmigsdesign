@@ -8,7 +8,6 @@ body {
   flex-direction: column;
   padding-top: 500px;
   font-family: 'Marcellus', serif;  
-  color: #fff;
 
 }
 
@@ -18,11 +17,10 @@ main {
   background-color: #f2f2f2;
 }
 
-#scene{
-  border: 1px solid yellow;
-  position: fixed;
-  z-index: 100000;
+.container{
+  width: 85%;
 }
+
 
 /*---------------------------------------------------
 HEADER STYLES
@@ -66,17 +64,6 @@ SLIDER STYLES
   top: 56%;
   left: 3%;
 }
-
-#slide-block{
-  height: 500px;
-  transition: all .7s ease;
-  position: fixed;
-}
-
-.block{
-  background-color: #000;
-}
-
 
 /*---------------------------------------------------
 MINI-HEADER STYLES
@@ -225,7 +212,29 @@ ul.navbar {
 }
 
 /*---------------------------------------------------
-FOOTER STYLES
+DEVELOPMENT STYLES
+---------------------------------------------------*/
+
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+  }
+  #slideContainer {
+    width: 400%; /* to contain 4 panels, each with 100% of window width */
+    height: 100%;
+  }
+  .panel {
+    height: 100%;
+    width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+    float: left;
+  }
+
+
+/*---------------------------------------------------
+CONTACT STYLES
 ---------------------------------------------------*/
 
 input:not([type])+label:after, input[type=text]+label:after, input[type=password]+label:after, input[type=email]+label:after, input[type=url]+label:after, input[type=time]+label:after, input[type=date]+label:after, input[type=datetime-local]+label:after, input[type=tel]+label:after, input[type=number]+label:after, input[type=search]+label:after, textarea.materialize-textarea+label:after {
