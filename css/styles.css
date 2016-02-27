@@ -207,14 +207,10 @@ ul.navbar {
   content:"";
   display:block;
   height: 10px;
-
   width: 100%;
 
 }
 
-/*---------------------------------------------------
-WELCOME STYLES
----------------------------------------------------*/
 
 /*---------------------------------------------------
 DEVELOPMENT STYLES
@@ -230,21 +226,6 @@ DEVELOPMENT STYLES
   font-size: 200px;
   margin-top: 70px;
 }
-#print-head-container{
-  overflow: hidden;
-  height: 330px;
-  background-color: #e0e0e0;
-}
-#print-header{
-  color: #f2f2f2 ;
-  font-size: 200px;
-  margin-top: 70px;
-}
-
-#print.anchor{
-  background-color: #e0e0e0;
-}
-
 
 #slide-container{
   width: 100%;
@@ -312,6 +293,54 @@ DEVELOPMENT STYLES
 
 .slide-left{
   margin-left: 50px;
+}
+
+/*---------------------------------------------------
+PRINT STYLES
+---------------------------------------------------*/
+#print-head-container, #skills-head-container{
+  overflow: hidden;
+  height: 330px;
+  background-color: #e0e0e0;
+}
+#print-header, #skills-header{
+  color: #f2f2f2 ;
+  font-size: 200px;
+  margin-top: 70px;
+}
+
+#print.anchor, #skills.anchor{
+  background-color: #e0e0e0;
+}
+.print-body, .skills-body{
+  height: 400px;
+  background-color:#f2f2f2;
+  margin-top: -120px;
+}
+
+
+/*---------------------------------------------------
+REPO STYLES
+---------------------------------------------------*/
+#repos-head-container, #contact-head-container{
+  overflow: hidden;
+  height: 330px;
+  background-color: #f2f2f2;
+}
+#repos-header, #contact-header{
+  color: #e0e0e0;
+  font-size: 200px;
+  margin-top: 70px;
+}
+
+#repos.anchor, #contact.anchor{
+  background-color: #f2f2f2;
+}
+
+.repos-body{
+  height: 400px;
+  background-color: #e0e0e0;
+  margin-top: -120px;
 }
 
 
