@@ -1,7 +1,7 @@
 $(function() {
-  
+
   var controller = new ScrollMagic.Controller();
-  
+
   // MINI-HEADER SCENE
   var miniHeader = TweenMax.to('#mini-header', 0.6, {
     height: 40
@@ -15,7 +15,7 @@ $(function() {
     duration: 40,
     offset: 360
   });
-  
+
   scene.setTween([fontHeader, miniHeader]);
   scene.addTo(controller);
 
@@ -30,11 +30,11 @@ $(function() {
   scene.setTween(mainNav);
   scene.addTo(controller);
 
- 
 
 
 
-  
- 
+
+
+
 
 });

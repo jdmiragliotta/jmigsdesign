@@ -5,6 +5,9 @@ $(document).ready(function(){
     indicators: false
   });
 
+
+
+
   // ADDS ANIMATION TO NAVBAR LINKS
   $('.nav-link').mouseenter(function(){
     $(this).children().filter(':not(:animated)').animate({bottom: '5px'});
@@ -39,9 +42,9 @@ $(document).ready(function(){
 
 
 });
-  
 
-  
+
+
 
 
 
