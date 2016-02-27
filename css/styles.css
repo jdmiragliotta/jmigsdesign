@@ -214,6 +214,28 @@ ul.navbar {
 
 
 /*---------------------------------------------------
+WELCOME STYLES
+---------------------------------------------------*/
+#welcome-head-container{
+  overflow: hidden;
+  height: 330px;
+  background-color: #e0e0e0;
+}
+#welcome-header{
+  color: #f2f2f2;
+  font-size: 200px;
+  margin-top: 70px;
+}
+
+.welcome-body{
+  height: 400px;
+  background-color:#f2f2f2;
+  margin-top: -100px;
+  padding-top: 50px;
+}
+}
+
+/*---------------------------------------------------
 DEVELOPMENT STYLES
 ---------------------------------------------------*/
 
@@ -226,6 +248,7 @@ DEVELOPMENT STYLES
   color: #e0e0e0;
   font-size: 200px;
   margin-top: 70px;
+  text-align: right;
 }
 
 #slide-container{
@@ -254,7 +277,7 @@ DEVELOPMENT STYLES
 
 #prev, #next{
   float: left;
-  margin-top: 145px;
+  margin-top: 230px;
   cursor: pointer;
   position: relative;
   z-index: 100;
@@ -332,7 +355,9 @@ REPO STYLES
   color: #e0e0e0;
   font-size: 200px;
   margin-top: 70px;
+  text-align: right;
 }
+
 
 #repos.anchor, #contact.anchor{
   background-color: #f2f2f2;
