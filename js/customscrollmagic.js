@@ -18,9 +18,8 @@ $(function() {
 
   scene.setTween([fontHeader, miniHeader]);
   scene.addTo(controller);
-  scene.addIndicators()
 
-  // MAIN NAV SCENE
+// MAIN NAV SCENE
   var mainNav = TweenMax.to('#nav', 0.5,{
     backgroundColor: "#423F3F"
   })
@@ -30,24 +29,158 @@ $(function() {
   });
   scene.setTween(mainNav);
   scene.addTo(controller);
-  scene.addIndicators()
 
+// WELCOME HEADER
+  var welcomeHeader = TweenMax.to('#welcome-header', 0.9,{
+    y: "-120px",
+
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#welcome-scene',
+
+  });
+  scene.reverse(false);
+  scene.setTween(welcomeHeader);
+  scene.addTo(controller);
+
+  var welcomeHeader = TweenMax.to('#welcome-header', 1.1,{
+   opacity:1,
+   delay:.2
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#welcome-scene',
+
+  });
+  scene.reverse(false);
+  scene.setTween(welcomeHeader);
+  scene.addIndicators;
+  scene.addTo(controller);
+
+// DEV HEADER
   var devHeader = TweenMax.to('#dev-header', 0.9,{
-    y: "-120px"
+    y: "-120px",
 
   })
   var scene = new ScrollMagic.Scene({
     triggerElement: '#header-scene',
-    offset:330
-
+    offset:235
   });
+  scene.reverse(false);
   scene.setTween(devHeader);
   scene.addTo(controller);
-  scene.addIndicators()
+
+  var devHeader = TweenMax.to('#dev-header', 1.1,{
+   opacity:1,
+   delay:.2
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#header-scene',
+    offset:235
+  });
+  scene.reverse(false);
+  scene.setTween(devHeader);
+  scene.addTo(controller);
+
+// PRINT HEADER
+  var printHeader = TweenMax.to('#print-header', 0.9,{
+    y: "-120px",
+
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#print-scene',
+    offset:235
+  });
+  scene.reverse(false);
+  scene.setTween(printHeader);
+  scene.addTo(controller);
+
+  var printHeader = TweenMax.to('#print-header', 1.1,{
+   opacity:1,
+   delay:.2
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#print-scene',
+    offset:235
+  });
+  scene.reverse(false);
+  scene.setTween(printHeader);
+  scene.addTo(controller);
 
 
+// REPO HEADER
+  var reposHeader = TweenMax.to('#repos-header', 0.9,{
+    y: "-120px",
 
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#repos-scene',
+    offset:235
+  });
+  scene.reverse(false);
+  scene.setTween(reposHeader);
+  scene.addTo(controller);
 
+  var reposHeader = TweenMax.to('#repos-header', 1.1,{
+   opacity:1,
+   delay:.2
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#repos-scene',
+    offset:235
+  });
+  scene.reverse(false);
+  scene.setTween(reposHeader);
+  scene.addTo(controller);
+
+// SKILLS HEADER
+  var skillsHeader = TweenMax.to('#skills-header', 0.9,{
+    y: "-120px",
+
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#skills-scene',
+    offset:235
+  });
+  scene.reverse(false);
+  scene.setTween(skillsHeader);
+  scene.addTo(controller);
+
+  var skillsHeader = TweenMax.to('#skills-header', 1.1,{
+   opacity:1,
+   delay:.2
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#skills-scene',
+    offset:235
+  });
+  scene.reverse(false);
+  scene.setTween(skillsHeader);
+  scene.addTo(controller);
+
+// CONTACT HEADER
+  var contactHeader = TweenMax.to('#contact-header', 0.9,{
+    y: "-120px",
+
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#contact-scene',
+    offset:235
+  });
+  scene.reverse(false);
+  scene.setTween(contactHeader);
+  scene.addTo(controller);
+
+  var contactHeader = TweenMax.to('#contact-header', 1.1,{
+   opacity:1,
+   delay:.2
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#contact-scene',
+    offset:235
+  });
+  scene.reverse(false);
+  scene.setTween(contactHeader);
+  scene.addTo(controller);
 
 
 });
