@@ -325,6 +325,16 @@ DEVELOPMENT STYLES
   margin-left: 50px;
 }
 
+.left-img {
+  padding-top: 50px;
+  padding-right:40px;
+}
+
+.right-img {
+  padding-top: 50px;
+  padding-left:40px;
+}
+
 /*---------------------------------------------------
 PRINT STYLES
 ---------------------------------------------------*/
