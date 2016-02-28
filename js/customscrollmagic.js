@@ -18,6 +18,7 @@ $(function() {
 
   scene.setTween([fontHeader, miniHeader]);
   scene.addTo(controller);
+  scene.addIndicators()
 
   // MAIN NAV SCENE
   var mainNav = TweenMax.to('#nav', 0.5,{
@@ -29,8 +30,20 @@ $(function() {
   });
   scene.setTween(mainNav);
   scene.addTo(controller);
+  scene.addIndicators()
 
+  var devHeader = TweenMax.to('#dev-header', 0.9,{
+    y: "-120px"
 
+  })
+  var scene = new ScrollMagic.Scene({
+    triggerElement: '#header-scene',
+    offset:330
+
+  });
+  scene.setTween(devHeader);
+  scene.addTo(controller);
+  scene.addIndicators()
 
 
 
