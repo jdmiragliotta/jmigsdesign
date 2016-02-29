@@ -6,6 +6,19 @@ $(document).ready(function(){
   });
 
 
+    $(".rslides").responsiveSlides({
+
+      timeout: 6000,
+      nav: true,
+      prevText: "<i class='material-icons'>keyboard_arrow_left</i>",
+      nextText: "<i class='material-icons'>keyboard_arrow_right</i>",
+      namespace: "large-btns"
+    });
+
+
+
+
+
 
 
   // ADDS ANIMATION TO NAVBAR LINKS

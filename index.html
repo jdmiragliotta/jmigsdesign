@@ -21,6 +21,8 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
     <!-- DEVICON CSS -->
     <link rel='stylesheet' href='https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css'>
+    <!-- Unslider CSS -->
+    <link href='css/responsiveslides.css' rel='stylesheet'>
     <!-- Custom CSS -->
     <link href='css/styles.css' rel='stylesheet'>
 </head>
@@ -112,16 +114,15 @@
     </div>
     <div id="header-scene"></div><!-- ScrollMagic Trigger-->
     <div id='dev' class='anchor'></div>
-      <div id="dev-head-container">
-        <h1 id="dev-header">Development</h1>
-      </div>
+    <div id="dev-head-container">
+      <h1 id="dev-header">Development</h1>
+    </div>
     <div id="dev-container" class="container-fluid">
-      <div  class="row">
-        <div id="slider-container">
-          <i id="prev" class="material-icons">navigate_before</i>
-          <div id="slide-wrap">
-            <div id="slider">
-              <div class="slide active">
+      <div class="row">
+        <div id="slide-wrap">
+          <div class="rslides_container">
+            <ul class="rslides">
+              <li>
                 <div class='row'>
                   <div class='col l8'>
                     <div id='daily-breifing'>
@@ -136,13 +137,14 @@
                       </div>
                       <div>
                         <a href='https://dailybriefing.herokuapp.com' target='_blank' class="slide-link waves-effect waves-light btn">Check It Out</a>
-                        <a href='' target='_blank' class="slide-link waves-effect waves-light btn">Technoligies</a>
+                        <a href='' target='_blank' class="slide-link waves-effect waves-light btn">Technologies</a>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="slide">
+              </li>
+
+              <li>
                 <div class='row'>
                   <div class="col l4">
                     <div class="slide-callout">
@@ -153,23 +155,45 @@
                       </div>
                       <div class="right-align">
                         <a href='https://dailybriefing.herokuapp.com' target='_blank' class="slide-link waves-effect waves-light btn">Check It Out</a>
-                        <a href='' target='_blank' class="slide-link waves-effect waves-light btn">Technoligies</a>
+                        <a href='' target='_blank' class="slide-link waves-effect waves-light btn">Technologies</a>
                       </div>
                     </div>
                   </div>
-                  <div class='col l8'>
-                    <div id='daily-breifing'>
+                  <div class='col l8 game'>
+                    <div id='rpsls'>
                      <img src='images/rpsls.png' class='img-responsive left right-img'>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <i id="next" class="material-icons">navigate_next</i>
+              </li>
+
+              <li>
+                <div class='row'>
+                  <div class='col l8'>
+                    <div id='daily-breifing'>
+                     <img src='images/db.png' class='img-responsive right left-img'>
+                    </div>
+                  </div>
+                  <div class="col l4">
+                    <div class="slide-callout">
+                      <div>
+                        <h5 class="slide-heading">Daily Briefing</h5>
+                        <p class="slide-text">Gather instant information on any location. The weather, traffic, news, upcoming events and images at your fingertips.</p>
+                      </div>
+                      <div>
+                        <a href='https://dailybriefing.herokuapp.com' target='_blank' class="slide-link waves-effect waves-light btn">Check It Out</a>
+                        <a href='' target='_blank' class="slide-link waves-effect waves-light btn">Technologies</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- dev-container -->
+
     <div id="print-scene"></div><!-- ScrollMagic Trigger-->
     <div id='print' class='anchor'></div>
     <div id="print-head-container">
@@ -294,7 +318,7 @@
   <!-- Custom JS  -->
   <script src='js/main.js' type='text/javascript'></script>
   <script src='js/development.js' type='text/javascript'></script>
-
+  <script src='js/responsiveslides.min.js' type='text/javascript'></script>
   <script src='js/customscrollmagic.js' type='text/javascript'></script>
   <!-- SmoothScroll -->
   <script type='text/javascript' src='js/smoothscroll.js'></script>

@@ -1,6 +1,6 @@
 $(document).ready(function(){
   //See Options
-  var speed = 1000;              // fade Speed
+  var speed = 1000;             // fade Speed
   var autoSwitch = true;        // auto Slider Option
   var autoSwitchSpeed = 6000;   // Auto Slider Speed
 
