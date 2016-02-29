@@ -1,54 +1,25 @@
 $(document).ready(function(){
-  //See Options
-  var speed = 1000;             // fade Speed
-  var autoSwitch = true;        // auto Slider Option
-  var autoSwitchSpeed = 6000;   // Auto Slider Speed
 
-  // Add initial active class
-  $(".slide").first().addClass("active");
 
-  // Hide all slides
-  $(".slide").hide();
+  $(".db-tech").hide();
+  $("#db-tech").on("click", function(){
+    $(".db-tech").show().addClass("animated fadeInLeft");
+  });
 
-  // Show first slide
-  $(".active").show();
+  $(".rpsls-tech").hide();
+  $("#rpsls-tech").on("click", function(){
+    $(".rpsls-tech").show().addClass("animated fadeInRight");
+  });
 
-  // Next Handler
-  $("#next").on("click", nextSlide);
+  $(".staythenight-tech").hide();
+  $("#staythenight-tech").on("click", function(){
+    $(".staythenight-tech").show().addClass("animated fadeInLeft");
+  });
 
-  // Prev Handler
-  $("#prev").on("click", prevSlide);
-
-  // Auto Slider Handler
-  if(autoSwitch === true){
-    setInterval(nextSlide, autoSwitchSpeed);
-  }
-
-  // Switch to next slide
-  function nextSlide(){
-    $(".active").removeClass("active").addClass("oldActive");
-    if($(".oldActive").is(":last-child")){
-      $(".slide").first().addClass("active");
-    }else{
-      $(".oldActive").next().addClass("active");
-    }
-    $(".oldActive").removeClass("oldActive");
-    $(".slide").fadeOut(speed);
-    $(".active").fadeIn(speed);
-  };
-
-  // Switch to prev slide
-  function prevSlide(){
-    $(".active").removeClass("active").addClass("oldActive");
-    if($(".oldActive").is(":first-child")){
-      $(".slide").last().addClass("active");
-    }else{
-      $(".oldActive").prev().addClass("active");
-    }
-    $(".oldActive").removeClass("oldActive");
-    $(".slide").fadeOut(speed);
-    $(".active").fadeIn(speed);
-  };
+   $(".codo-tech").hide();
+  $("#codo-tech").on("click", function(){
+    $(".codo-tech").show().addClass("animated fadeInRight");
+  });
 
 
 

@@ -342,6 +342,44 @@ DEVELOPMENT STYLES
   padding-top: 75px;
 }
 
+.codo{
+  color:#a90004;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(20%, 0, 0);
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.icon-container{
+  margin-top: 20px;
+}
+.codo-tech, .rpsls-tech{
+  font-size: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.staythenight-tech, .db-tech{
+  font-size: 75px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+
+.svg{
+  padding-top:15px;
+}
+
 
 
 /*---------------------------------------------------
