@@ -231,13 +231,39 @@ WELCOME STYLES
 }
 
 .welcome-body{
-  height: 400px;
+  height: 360px;
   background-color:#f2f2f2;
   margin-top: -100px;
   padding-top: 50px;
 }
+
+.welcome-paragraph, .welcome-list{
+  font-size: 20px;
 }
 
+.welcome-paragraph{
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+#well-hello{
+  text-align: center;
+}
+#current-obsessions{
+  text-align: center;
+  padding-top:30px;
+}
+#obsessions{
+  text-align: center;
+}
+.obsessions{
+  display: inline-block;
+  text-align: center;
+  width:250px;
+  font-size: 20px;
+
+}
 /*---------------------------------------------------
 DEVELOPMENT STYLES
 ---------------------------------------------------*/
@@ -250,7 +276,7 @@ DEVELOPMENT STYLES
 #dev-header{
   opacity: 0;
   font-size: 200px;
-  margin-top: 70px;
+  margin-top: 90px;
   text-align: right;
   position: relative;
   top: 112px;
