@@ -416,11 +416,31 @@ PRINT STYLES
   background-color: #e0e0e0;
 }
 .print-body, .skills-body{
-  height: 400px;
   background-color:#f2f2f2;
   margin-top: -120px;
   position: relative;
   z-index: 2;
+}
+.skills-body{
+  height:100%;
+}
+
+.print-body{
+  padding-top: 40px;
+  height: 1180px;
+  margin-bottom:200px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.panel{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.margin:{
+  margin-top: 40px;
 }
 
 /*---------------------------------------------------
@@ -491,14 +511,14 @@ SKILLS STYLES
 }
 
 /*---------------------------------------------------
-REPO STYLES
+CLIENT STYLES
 ---------------------------------------------------*/
-#repos-head-container, #contact-head-container{
+#clients-head-container, #contact-head-container{
   overflow: hidden;
   height: 330px;
   background-color: #f2f2f2;
 }
-#repos-header, #contact-header{
+#clients-header, #contact-header{
   color: #e0e0e0;
   font-size: 200px;
   margin-top: 70px;
@@ -509,12 +529,12 @@ REPO STYLES
 }
 
 
-#repos.anchor, #contact.anchor{
+#clients.anchor, #contact.anchor{
   background-color: #f2f2f2;
 }
 
-.repos-body{
-  height: 400px;
+.clients-body{
+  height: 550px;
   background-color: #e0e0e0;
   margin-top: -120px;
   position: relative;
@@ -522,19 +542,47 @@ REPO STYLES
 }
 
 .contact-body{
-  height: 400px;
+
   background-color: #e0e0e0;
   margin-top: -105px;
   position: relative;
   z-index: 2;
 }
 
+.client-icon{
+  color: #f2f2f2;
+}
+.quotes{
+  font-family: "Coustard";
+  font-size: 40px;
+  color:#a90004;
+  position: relative;
+  z-index: 0;
+}
+
+.client-paragrpah{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.client{
+  margin-top: 10px;
+}
+
 /*---------------------------------------------------
 CONTACT STYLES
 ---------------------------------------------------*/
-
+.contact-section{
+  margin-top:300px;
+  position: relative;
+  bottom: 0;
+}
 input:not([type])+label:after, input[type=text]+label:after, input[type=password]+label:after, input[type=email]+label:after, input[type=url]+label:after, input[type=time]+label:after, input[type=date]+label:after, input[type=datetime-local]+label:after, input[type=tel]+label:after, input[type=number]+label:after, input[type=search]+label:after, textarea.materialize-textarea+label:after {
     width: 130px;
+}
+
+.contact-btn{
+  margin-bottom: 30px;
 }
 /*---------------------------------------------------
 FOOTER STYLES

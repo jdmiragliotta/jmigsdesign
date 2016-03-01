@@ -5,15 +5,27 @@ $(document).ready(function(){
     indicators: false
   });
 
+  $(".rslides").responsiveSlides({
 
-    $(".rslides").responsiveSlides({
+    timeout: 6000,
+    nav: true,
+    prevText: "<i class='material-icons'>keyboard_arrow_left</i>",
+    nextText: "<i class='material-icons'>keyboard_arrow_right</i>",
+    namespace: "large-btns"
+  });
 
-      timeout: 6000,
-      nav: true,
-      prevText: "<i class='material-icons'>keyboard_arrow_left</i>",
-      nextText: "<i class='material-icons'>keyboard_arrow_right</i>",
-      namespace: "large-btns"
-    });
+  $('.modal-trigger').leanModal();
+
+  $(".fancybox").fancybox();
+
+  $("#single_1").fancybox({
+    helpers: {
+      title : {
+        type : 'float'
+      }
+    }
+  });
+
 
 
 

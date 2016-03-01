@@ -108,28 +108,28 @@ $(function() {
 
 
 // REPO HEADER
-  var reposHeader = TweenMax.to('#repos-header', 0.9,{
+  var clientsHeader = TweenMax.to('#clients-header', 0.9,{
     y: "-120px",
 
   })
   var scene = new ScrollMagic.Scene({
-    triggerElement: '#repos-scene',
+    triggerElement: '#clients-scene',
     offset:235
   });
   scene.reverse(false);
-  scene.setTween(reposHeader);
+  scene.setTween(clientsHeader);
   scene.addTo(controller);
 
-  var reposHeader = TweenMax.to('#repos-header', 1.1,{
+  var clientsHeader = TweenMax.to('#clients-header', 1.1,{
    opacity:1,
    delay:.2
   })
   var scene = new ScrollMagic.Scene({
-    triggerElement: '#repos-scene',
+    triggerElement: '#clients-scene',
     offset:235
   });
   scene.reverse(false);
-  scene.setTween(reposHeader);
+  scene.setTween(clientsHeader);
   scene.addTo(controller);
 
 // SKILLS HEADER
