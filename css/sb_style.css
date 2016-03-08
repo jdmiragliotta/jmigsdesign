@@ -13,7 +13,7 @@ html {
 
 body {
  /* font-size: 1.6rem;*/
-  font-family: "Source Sans Pro", sans-serif;
+
   color: #0f1926;
   background-color: #ebebeb;
 }
@@ -117,10 +117,11 @@ Intro page
 }
 .cd-intro-block.projects-visible {
   /* translate the .cd-intro-block element to reveal the projects slider */
-  -webkit-transform: translateY(-90%);
-  -moz-transform: translateY(-90%);
-  -ms-transform: translateY(-90%);
-  -o-transform: translateY(-90%);
+
+  -webkit-transform: translateY(-90%) ;
+  -moz-transform: translateY(-90%) ;
+  -ms-transform: translateY(-90%) ;
+  -o-transform: translateY(-90%) ;
   transform: translateY(-90%);
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
   cursor: pointer;
@@ -138,11 +139,11 @@ Intro page
     font-weight: 300;
   }
   .cd-intro-block.projects-visible {
-    -webkit-transform: translateY(90%);
-    -moz-transform: translateY(90%);
-    -ms-transform: translateY(90%);
-    -o-transform: translateY(90%);
-    transform: translateY(90%);
+    -webkit-transform: translateY(-90%);
+    -moz-transform: translateY(-90%);
+    -ms-transform: translateY(-90%);
+    -o-transform: translateY(-90%);
+    transform: translateY(-90%);
   }
 }
 
@@ -183,7 +184,7 @@ Projects Slider
 
 .cd-slider {
   padding-top: 10vh;
-  height: 95%;
+  height: 100%;
   overflow-y: auto;
 }
 .projects-visible .cd-slider {
@@ -275,7 +276,7 @@ Projects Slider
     float: left;
     width: 26vw;
     margin: 0 0 0 2vw;
-    top: 50%;
+    top: 55%;
     -webkit-transform: translateX(400%) translateY(-50%) rotate(-10deg);
     -moz-transform: translateX(400%) translateY(-50%) rotate(-10deg);
     -ms-transform: translateX(400%) translateY(-50%) rotate(-10deg);

@@ -166,7 +166,7 @@ MINI-HEADER STYLES
 NAV STYLES
 ---------------------------------------------------*/
 nav{
-  margin-top: -60px;
+  margin-top: -75px;
   height: 60px;
   z-index: 1501;
   background-color: transparent;
@@ -450,6 +450,7 @@ PRINT STYLES
   background-color:#f2f2f2;
   position: relative;
   overflow: hidden;
+  max-height: 600px;
 
 
 
