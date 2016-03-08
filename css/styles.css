@@ -26,6 +26,12 @@ main {
   clear: none;
 }
 
+.clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
 /*---------------------------------------------------
 HEADER STYLES
 ---------------------------------------------------*/
@@ -218,23 +224,15 @@ WELCOME STYLES
 ---------------------------------------------------*/
 #welcome-head-container{
   overflow: hidden;
-  height: 330px;
+  height: 226px;
   background-color: #e0e0e0;
 }
 #welcome-header{
   color: #f2f2f2;
   font-size: 200px;
-  margin-top: 70px;
   position: relative;
-  top: 120px;
+  top: 157px;
   opacity: 0;
-}
-
-.welcome-body{
-  height: 360px;
-  background-color:#f2f2f2;
-  margin-top: -100px;
-  padding-top: 50px;
 }
 
 .welcome-paragraph, .welcome-list{
@@ -270,16 +268,16 @@ DEVELOPMENT STYLES
 
 #dev-head-container{
   overflow: hidden;
-  height: 330px;
+  height: 248px;
+  margin-top: 80px;
   background-color: #f2f2f2;
 }
 #dev-header{
   opacity: 0;
   font-size: 200px;
-  margin-top: 90px;
   text-align: right;
   position: relative;
-  top: 112px;
+  top: 80px;
   color: #e0e0e0;
 }
 
@@ -296,8 +294,7 @@ DEVELOPMENT STYLES
   float:left;
 }
 
-#slide-wrap{
-  height:700px;
+#development-section{
   background-color: #E0E0E0;
   margin-top: -100px;
 
@@ -424,39 +421,37 @@ DEVELOPMENT STYLES
 /*---------------------------------------------------
 PRINT STYLES
 ---------------------------------------------------*/
-#print-head-container, #skills-head-container{
-  overflow: hidden;
-  height: 330px;
-  background-color: #e0e0e0;
+#print-head-container, #skills-head-container {
+    overflow: hidden;
+    height: 200px;
+    margin-top: 20px;
+    background-color: #e0e0e0;
 }
 #print-header, #skills-header{
-  color: #f2f2f2 ;
-  font-size: 200px;
-  margin-top: 70px;
-  position: relative;
-  top: 120px;
-  opacity: 0;
+    color: #f2f2f2;
+    font-size: 200px;
+    margin-top: 31px;
+    position: relative;
+    top: 132px;
 }
 
 #print.anchor, #skills.anchor{
   background-color: #e0e0e0;
 }
-.print-body, .skills-body{
+.skills-body{
   background-color:#f2f2f2;
   margin-top: -120px;
-  position: relative;
-  z-index: 2;
-}
-.skills-body{
-  height:100%;
+
 }
 
-.print-body{
-  padding-top: 40px;
-  height: 1180px;
-  margin-bottom:200px;
-  margin-left: auto;
-  margin-right: auto;
+
+#design-section{
+
+  background-color:#f2f2f2;
+  position: relative;
+  overflow: hidden;
+
+
 
 }
 
@@ -465,9 +460,7 @@ PRINT STYLES
   margin-bottom: 15px;
 }
 
-.margin:{
-  margin-top: 40px;
-}
+
 
 /*---------------------------------------------------
 SKILLS STYLES

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tilted</title>
+<link   rel='stylesheet' type="text/css" href="css/component.css">
+
+
+
+
+
+<script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+
+<script>
+$(document).ready(function(){
+// var el=1;
+// repeat(7000,function(){
+// if(el==2){
+// $('#slideshow nav span:nth-child(1)').click();
+// el=2;
+// }
+// else{
+// $('#slideshow nav span:nth-child("+el+")').click();
+// el=el+1;
+// }
+// });
+// });
+
+var el=1;
+var elements = $('#slideshow ol li');
+var dots = $('#slideshow nav span');
+setInterval(function(){
+if(el==elements.length){
+$(dots[1]).click();
+el=2;
+}
+else{
+$(dots[el]).click();
+el=el+1;
+}
+}, 5000);
+});
+
+
+</script>
+</head>
+<body>
+  <div class="slideshow" id="slideshow">
+  <ol class="slides">
+    <li class="current">
+      <div class="description">
+        <h2>Some Title</h2>
+        <p>Some description</p>
+      </div>
+      <div class="tiltview row">
+        <a href="http://grovemade.com/"><img src="images/nisopeningday.jpg"/></a>
+        <a href="https://tsovet.com/"><img src="images/feelthelove.jpg"/></a>
+      </div>
+    </li>
+    <li>
+      <div class="description">
+        <h2>New Title</h2>
+        <p>New description</p>
+      </div>
+      <div class="tiltview row">
+       <a href="http://grovemade.com/"><img src="images/nisopeningday.jpg"/></a>
+        <a href="https://tsovet.com/"><img src="images/feelthelove.jpg"/></a>
+        <!-- ... -->
+      </div>
+    </li>
+    <li>
+      <!-- ... -->
+    </li>
+  </ol>
+</div>
+
+
+
+<script src="js/classie.js" type="text/javascript"></script>
+<script src="js/modernizr.custom.js" type="text/javascript"></script>
+
+<script src="js/tiltSlider.js" type="text/javascript"></script>
+</body>
+</html>
