@@ -421,18 +421,35 @@ DEVELOPMENT STYLES
 /*---------------------------------------------------
 PRINT STYLES
 ---------------------------------------------------*/
-#design-head-container, #skills-head-container {
+#design-head-container {
     overflow: hidden;
     height: 218px;
     padding-top: 20px;
     background-color: #e0e0e0;
 }
-#design-header, #skills-header{
+
+#design-header{
     color: #f2f2f2;
     font-size: 200px;
     margin-top: 31px;
     position: relative;
     top: 132px;
+}
+
+
+#skills-head-container {
+    overflow: hidden;
+    height: 348px;
+    padding-top: 35px;
+    background-color: #e0e0e0;
+}
+
+#skills-header{
+    color: #f2f2f2;
+    font-size: 200px;
+    margin-top: 12px;
+    position: relative;
+    top: 145px;
 }
 
 #design.anchor, #skills.anchor{
@@ -599,7 +616,7 @@ CLIENT STYLES
 ---------------------------------------------------*/
 #clients-head-container, #contact-head-container{
   overflow: hidden;
-  height: 330px;
+  height: 346px;
   background-color: #f2f2f2;
 }
 #clients-header, #contact-header{
