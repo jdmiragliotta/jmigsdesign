@@ -82,28 +82,28 @@ $(function() {
   scene.addTo(controller);
 
 // PRINT HEADER
-  var printHeader = TweenMax.to('#print-header', 0.9,{
+  var designHeader = TweenMax.to('#design-header', 0.9,{
     y: "-120px",
 
   })
   var scene = new ScrollMagic.Scene({
-    triggerElement: '#print-scene',
+    triggerElement: '#design-scene',
     offset:235
   });
   scene.reverse(false);
-  scene.setTween(printHeader);
+  scene.setTween(designHeader);
   scene.addTo(controller);
 
-  var printHeader = TweenMax.to('#print-header', 1.1,{
+  var printHeader = TweenMax.to('#design-header', 1.1,{
    opacity:1,
    delay:.2
   })
   var scene = new ScrollMagic.Scene({
-    triggerElement: '#print-scene',
+    triggerElement: '#design-scene',
     offset:235
   });
   scene.reverse(false);
-  scene.setTween(printHeader);
+  scene.setTween(designHeader);
   scene.addTo(controller);
 
 

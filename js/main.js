@@ -16,15 +16,7 @@ $(document).ready(function(){
 
   $('.modal-trigger').leanModal();
 
-  $(".fancybox").fancybox();
 
-  $("#single_1").fancybox({
-    helpers: {
-      title : {
-        type : 'float'
-      }
-    }
-  });
 
 
 

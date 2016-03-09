@@ -421,13 +421,13 @@ DEVELOPMENT STYLES
 /*---------------------------------------------------
 PRINT STYLES
 ---------------------------------------------------*/
-#print-head-container, #skills-head-container {
+#design-head-container, #skills-head-container {
     overflow: hidden;
-    height: 200px;
-    margin-top: 20px;
+    height: 218px;
+    padding-top: 20px;
     background-color: #e0e0e0;
 }
-#print-header, #skills-header{
+#design-header, #skills-header{
     color: #f2f2f2;
     font-size: 200px;
     margin-top: 31px;
@@ -435,7 +435,7 @@ PRINT STYLES
     top: 132px;
 }
 
-#print.anchor, #skills.anchor{
+#design.anchor, #skills.anchor{
   background-color: #e0e0e0;
 }
 .skills-body{
@@ -466,6 +466,7 @@ PRINT STYLES
 .content-img{
   max-width: 100%;
   max-height: 550px;
+
 }
 
 #openingday{
@@ -476,6 +477,49 @@ PRINT STYLES
 }
 #feelthelove{
   background-image: url("../images/feelthelove.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#nugents{
+  background-image: url("../images/nugents.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#behindtheplates{
+  background-image: url("../images/behindtheplates.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#flipcup{
+  background-image: url("../images/flagday.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+#nisposter{
+  background-image: url("../images/nisposter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#mardigras{
+  background-image: url("../images/vandysmg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#oktoberfest{
+  background-image: url("../images/vandysoktoberfest.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
