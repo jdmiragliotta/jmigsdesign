@@ -166,7 +166,7 @@ MINI-HEADER STYLES
 NAV STYLES
 ---------------------------------------------------*/
 nav{
-  margin-top: -75px;
+  margin-top: -85px;
   height: 60px;
   z-index: 1501;
   background-color: transparent;
@@ -252,15 +252,22 @@ WELCOME STYLES
   text-align: center;
   padding-top:30px;
 }
-#obsessions{
+.obsessions-row{
   text-align: center;
+  padding-bottom: 30px;
 }
 .obsessions{
   display: inline-block;
   text-align: center;
   width:250px;
   font-size: 20px;
+}
 
+#welcome-btn{
+  text-align: center;
+}
+.read-more{
+  cursor: pointer;
 }
 /*---------------------------------------------------
 DEVELOPMENT STYLES
@@ -447,7 +454,7 @@ PRINT STYLES
 #skills-header{
     color: #f2f2f2;
     font-size: 200px;
-    margin-top: 12px;
+    margin-top: 16px;
     position: relative;
     top: 145px;
 }
