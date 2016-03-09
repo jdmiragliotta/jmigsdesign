@@ -3,9 +3,12 @@ $(document).ready(function(){
 // Hide Action
   $("#short-welcome").hide();
   $("#middle-welcome").hide();
+  $("#coding-sub").hide();
+  $("#nephews-sub").hide();
+  $("#running-sub").hide();
+  $("#pb-sub").hide();
 
-   //On Click Event
-
+ //On Click Event
   $("#mid-wel-btn").on("click", function(){
     if($("#long-welcome").is(":visible")){
        $("#long-welcome").fadeOut(500, function(){
@@ -17,7 +20,6 @@ $(document).ready(function(){
       });
     };
   });
-
 
   $("#short-wel-btn").on("click", function(){
       if($("#long-welcome").is(":visible")){
@@ -42,5 +44,21 @@ $(document).ready(function(){
         });
       };
     });
+
+  $("#coding").on("mouseover", function(){
+    $("#coding-sub").show().addClass("animated fadeInLeft");
+  });
+
+  $("#nephews").on("mouseover", function(){
+    $("#nephews-sub").show().addClass("animated fadeInLeft");
+  });
+
+   $("#running").on("mouseover", function(){
+    $("#running-sub").show().addClass("animated fadeInLeft");
+  });
+
+     $("#pb").on("mouseover", function(){
+    $("#pb-sub").show().addClass("animated fadeInLeft");
+  });
 
 }); //End document.ready
