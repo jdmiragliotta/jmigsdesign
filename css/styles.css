@@ -243,6 +243,7 @@ WELCOME STYLES
   padding-left: 50px;
   padding-right: 50px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 #well-hello{
@@ -254,12 +255,12 @@ WELCOME STYLES
 }
 .obsessions-row{
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .obsessions{
   display: inline-block;
   text-align: center;
-  width:250px;
+  width:200px;
   font-size: 20px;
 }
 
