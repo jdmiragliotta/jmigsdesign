@@ -6,7 +6,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  padding-top: 500px;
+
   font-family: 'Marcellus', serif;
 }
 
@@ -36,7 +36,7 @@ main {
 HEADER STYLES
 ---------------------------------------------------*/
 header{
-  position: fixed;
+  position: relative;
   top: 0px;
   width: 100%;
 }
@@ -51,11 +51,10 @@ header{
 
 .main-callout{
   background-image: url("../images/slideMain.png");
-
   height: 500px;
   width: 100%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
   background-position: top center;
 }
 
