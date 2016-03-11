@@ -665,7 +665,7 @@ SKILLS STYLES
   margin-top: -17px;
 }
 
-.skill-paragraph{
+.skill-paragraph, .client-p-container{
   height:75px;
 }
 
@@ -747,8 +747,46 @@ input:not([type])+label:after, input[type=text]+label:after, input[type=password
 }
 
 .contact-btn{
+  margin-right: 10px;
   margin-bottom: 30px;
 }
+
+  /* label color */
+   .input-field label {
+     color: #a90004;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label,  .input-field input[type=email]:focus + label{
+     color:  #a90004;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus,  .input-field input[type=email]:focus  {
+     border-bottom: 1px solid  #a90004;
+     box-shadow: 0 1px 0 0  #a90004;
+   }
+   /* valid color */
+   .input-field input[type=text].valid,  .input-field input[type=email].valid {
+     border-bottom: 1px solid  #a90004;
+     box-shadow: 0 1px 0 0  #a90004;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid,  .input-field input[type=email].invalid {
+     border-bottom: 1px solid  #a90004;
+     box-shadow: 0 1px 0 0  #a90004;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color:  #a90004;
+   }
+
+   textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #a90004;
+    box-shadow: 0 1px 0 0 #a90004;
+  }
+  textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #a90004;
+  }
+
 /*---------------------------------------------------
 FOOTER STYLES
 ---------------------------------------------------*/
@@ -802,7 +840,7 @@ MEDIA QUERIES
     padding-left: 5px;
   }
 
-  #dev-header, #welcome-header, #design-header{
+  #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
     font-size: 125px;
   }
 
@@ -810,13 +848,20 @@ MEDIA QUERIES
     margin-top: 40px;
   }
 
+  #clients-header{
+    top: 125px;
+  }
+
   #dev-head-container {
     height: 187px;
   }
 
-   #welcome-head-container {
+  #welcome-head-container {
     height: 172px;
   }
+  #clients-head-container {
+    height: 292px;
+    }
 
   .left-img, .right-img {
     padding-right: 25px;
@@ -865,6 +910,33 @@ MEDIA QUERIES
   .rpsls-tech, .codo-tech{
     padding-left: 22px;
   }
+
+  .cd-project-content {
+    top: 9.5%;
+    height: 90%;
+  }
+  .cd-slider li {
+    margin: 4% 10%;
+  }
+  #skills-head-container {
+    height: 293px;
+  }
+
+  .filter-skills-box>a>i {
+    font-size: 160px;
+  }
+
+  .skill-paragraph > p{
+    font-size:13px;
+  }
+
+  .bottom-p {
+    margin-top: -7px;
+}
+  .slide-link {
+    width: 20%;
+
+
 
 
 }
