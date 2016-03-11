@@ -203,6 +203,14 @@ nav{
   transition: background-color 0.3s ease;
 }
 
+nav#nav-small{
+  margin-top:24px;
+  background-color: #423F3F;
+  position: fixed;
+  top:25px
+  z-index:300;
+}
+
 nav ul a:hover{
   background-color: transparent;
 }

@@ -36,14 +36,14 @@ $(document).ready(function(){
   // CREATES STICKY NAVBAR
   $(window).scroll(function() {
     if( $(this).scrollTop() > $('header').height()-105) {
-      $('nav').addClass('scroll');
+      $('nav#nav').addClass('scroll');
     } else {
-      $('nav').removeClass('scroll');
+      $('nav#nav').removeClass('scroll');
     }
     if( $(this).scrollTop() > $('header').height()-140) {
-      $('nav').addClass('scroll-color');
+      $('nav#nav').addClass('scroll-color');
     } else {
-      $('nav').removeClass('scroll-color');
+      $('nav#nav').removeClass('scroll-color');
     }
   });
 
