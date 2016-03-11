@@ -242,14 +242,13 @@ WELCOME STYLES
 }
 
 .welcome-paragraph, .welcome-list{
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .welcome-paragraph{
+
   padding-left: 50px;
-  padding-right: 50px;
-  text-align: center;
-  padding-bottom: 50px;
+  font-size: 18px;
 }
 
 #well-hello{
@@ -298,30 +297,35 @@ WELCOME STYLES
   width: 50%;
 }
 
-
 #welcome-btn{
   text-align: center;
 }
 .read-more{
   cursor: pointer;
 }
+ .short>h5{
+  color: #a90004;
+  padding-left: 15px;
+ }
 
-@font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: 'feathericons';
-  src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
-  src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
-    url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
-    url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
-    url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
-}
+ .welcome-p{
+  padding-left: 30px;
+ }
+
+ small{
+  color:#423F3F;
+
+  padding-right: 30px;
+  font-size: 15px;
+ }
 
 
 /*---------------------------------------------------
 DEVELOPMENT STYLES
 ---------------------------------------------------*/
-
+.dev-mid{
+  background-color: #f2f2f2;
+}
 #dev-head-container{
   overflow: hidden;
   height: 248px;

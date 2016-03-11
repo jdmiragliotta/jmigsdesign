@@ -1,12 +1,8 @@
 $(document).ready(function(){
 
 // Hide Action
-  $("#short-welcome").hide();
-  $("#middle-welcome").hide();
-  $("#coding-sub").hide();
-  $("#nephews-sub").hide();
-  $("#running-sub").hide();
-  $("#pb-sub").hide();
+  $(".short").hide();
+  $("#more").hide();
   $(".css3-site").hide();
   $(".css3-line").hide();
   $(".fitness-site").hide();
@@ -15,42 +11,24 @@ $(document).ready(function(){
   $(".uxui-line").hide();
   $(".pb-site").hide();
   $(".pb-line").hide();
+
  //On Click Event
   $("#mid-wel-btn").on("click", function(){
-    if($("#long-welcome").is(":visible")){
-       $("#long-welcome").fadeOut(500, function(){
-         $("#middle-welcome").fadeIn(2000);
-       });
-    } else {
-      $("#short-welcome").fadeOut(500, function(){
-        $("#middle-welcome").fadeIn(2000);
-      });
-    };
+    $("#more").show();
+    $("#mid-wel-btn").hide();
+    $(".long").fadeOut(1, function(){
+        $(".short").show().addClass("animated fadeInLeft");
+    });
   });
 
-  $("#short-wel-btn").on("click", function(){
-      if($("#long-welcome").is(":visible")){
-         $("#long-welcome").fadeOut(500, function(){
-           $("#short-welcome").fadeIn(2000);
-         });
-      } else {
-        $("#middle-welcome").fadeOut(500, function(){
-          $("#short-welcome").fadeIn(2000);
-        });
-      };
-    });
+   $("#more").on("click", function(){
+    $("#mid-wel-btn").show();
+    $("#more").hide();
 
-  $(".read-more").on("click", function(){
-      if($("#short-welcome").is(":visible")){
-         $("#short-welcome").fadeOut(500, function(){
-           $("#long-welcome").fadeIn(2000);
-         });
-      } else {
-        $("#middle-welcome").fadeOut(500, function(){
-          $("#long-welcome").fadeIn(2000);
-        });
-      };
+    $(".short").fadeOut(1, function(){
+        $(".long").show().addClass("animated fadeInLeft");
     });
+  });
 
   $("#coding").on("mouseover", function(){
     $("#coding-sub").show().addClass("animated fadeInLeft");
