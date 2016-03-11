@@ -812,7 +812,7 @@ MEDIA QUERIES
 
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 769px) {
   .mini-header a.logo {
     text-align: left;
   }
