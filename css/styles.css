@@ -88,16 +88,25 @@ SLIDER STYLES
 /*---------------------------------------------------
 MINI-HEADER STYLES
 ---------------------------------------------------*/
-.mini-header {
+.mini-header{
   height: 80px;
   transition: all .7s ease;
   background-color: #333;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1500,
+  z-index: 1500;
 }
 
+.mini-header-small{
+  height: 50px;
+  transition: all .7s ease;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1500;
+}
 
 .logo-container {
   height: 80px;
@@ -105,7 +114,16 @@ MINI-HEADER STYLES
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1500,
+  z-index: 1500;
+}
+
+.logo-container-small {
+  height: 50px;
+  transition: all .4s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1500;
 }
 
 .logo{
