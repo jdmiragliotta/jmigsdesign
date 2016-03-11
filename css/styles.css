@@ -13,7 +13,7 @@ body {
 main {
   flex: 1 0 auto;
   position: relative;
-/*  background-color: #f2f2f2;*/
+  background-color: #f2f2f2;
  }
 
 .container{
@@ -801,6 +801,72 @@ MEDIA QUERIES
   .dev-nav-icon{
     padding-left: 5px;
   }
+
+  #dev-header, #welcome-header, #design-header{
+    font-size: 125px;
+  }
+
+  #design-header{
+    margin-top: 40px;
+  }
+
+  #dev-head-container {
+    height: 187px;
+  }
+
+   #welcome-head-container {
+    height: 172px;
+  }
+
+  .left-img, .right-img {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .slide-link{
+    width:90%;
+    margin-bottom: 10px;
+  }
+
+  .slide-callout {
+    margin-top: 38px;
+  }
+
+  .game{
+    height: 0px;
+  }
+
+  .slide-heading{
+    font-size: 30px;
+  }
+
+  .slide-text{
+    font-size: 15px;
+  }
+  #rpsls {
+    padding-top: 25px;
+  }
+
+  #design-head-container {
+    height: 170px;
+  }
+
+  #dev.anchor{
+  margin-top: 60px;
+  }
+
+  .db-tech, .rpsls-tech, .staythenight-tech, .codo-tech{
+    font-size: 33px;
+   }
+
+  .db-tech, .staythenight-tech{
+    padding-right: 22px;
+  }
+  .rpsls-tech, .codo-tech{
+    padding-left: 22px;
+  }
+
+
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
