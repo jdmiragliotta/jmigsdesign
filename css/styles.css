@@ -91,6 +91,7 @@ MINI-HEADER STYLES
 .mini-header{
   height: 80px;
   transition: all .7s ease;
+  -webkit-transition: all .7s ease;
   background-color: #333;
   position: fixed;
   top: 0;
@@ -100,6 +101,7 @@ MINI-HEADER STYLES
 
 .mini-header-small{
   height: 50px;
+  -webkit-transition: all .7s ease;
   transition: all .7s ease;
   background-color: #333;
   position: fixed;
@@ -110,6 +112,7 @@ MINI-HEADER STYLES
 
 .logo-container {
   height: 80px;
+  -webkit-transition: all .4s ease;
   transition: all .4s ease;
   position: fixed;
   top: 0;
@@ -119,7 +122,6 @@ MINI-HEADER STYLES
 
 .logo-container-small {
   height: 50px;
-  transition: all .4s ease;
   position: fixed;
   top: 0;
   width: 100%;
@@ -199,6 +201,8 @@ nav{
   z-index: 1501;
   background-color: transparent;
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
+  -webkit-transition:margin-bottom 0.5s ease;
+  -webkit-transition: background-color 0.3s ease;
   transition:margin-bottom 0.5s ease;
   transition: background-color 0.3s ease;
 }
@@ -237,12 +241,12 @@ ul.navbar {
 }
 
 .nav-icon {
-    height: 0px;
-    display: block;
-    font-size: 20px;
+  height: 0px;
+  display: block;
+  font-size: 20px;
 
-    margin-top: 10px;
-    position: relative;
+  margin-top: 10px;
+  position: relative;
 }
 
 .anchor:before {
