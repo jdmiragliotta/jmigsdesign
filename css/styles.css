@@ -49,6 +49,16 @@ header{
   color: #a90004;
 }
 
+.main-callout{
+  background-image: url("../images/slideMain.png");
+
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+}
+
 
 /*---------------------------------------------------
 SLIDER STYLES
