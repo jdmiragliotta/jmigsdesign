@@ -13,38 +13,23 @@ $(document).ready(function(){
   $(".pb-line").hide();
 
  //On Click Event
-  $("#mid-wel-btn").on("click", function(){
-    $("#more").show();
-    $("#mid-wel-btn").hide();
-    $(".long").fadeOut(1, function(){
-        $(".short").show().addClass("animated fadeInLeft");
-    });
-  });
+  // $("#mid-wel-btn").on("click", function(){
+  //   $("#more").show();
+  //   $("#mid-wel-btn").hide();
+  //   $(".long").fadeOut(1, function(){
+  //       $(".short").show().addClass("animated fadeInLeft");
+  //   });
+  // });
 
-   $("#more").on("click", function(){
-    $("#mid-wel-btn").show();
-    $("#more").hide();
+  //  $("#more").on("click", function(){
+  //   $("#mid-wel-btn").show();
+  //   $("#more").hide();
 
-    $(".short").fadeOut(1, function(){
-        $(".long").show().addClass("animated fadeInLeft");
-    });
-  });
+  //   $(".short").fadeOut(1, function(){
+  //       $(".long").show().addClass("animated fadeInLeft");
+  //   });
+  // });
 
-  $("#coding").on("mouseover", function(){
-    $("#coding-sub").show().addClass("animated fadeInLeft");
-  });
-
-  $("#nephews").on("mouseover", function(){
-    $("#nephews-sub").show().addClass("animated fadeInLeft");
-  });
-
-   $("#running").on("mouseover", function(){
-    $("#running-sub").show().addClass("animated fadeInLeft");
-  });
-
-     $("#pb").on("mouseover", function(){
-    $("#pb-sub").show().addClass("animated fadeInLeft");
-  });
 
   $("#css3").on("mouseover", function(){
     $(".css3-site").show().addClass("animated fadeInRight");

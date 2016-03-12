@@ -253,7 +253,7 @@ WELCOME STYLES
 #welcome-section{
   position: relative;
   background-color: #f2f2f2;
-  height: 525px;
+
   margin-top: -27px;
 }
 
@@ -332,7 +332,6 @@ WELCOME STYLES
   color:#423F3F;
 
   padding-right: 30px;
-  font-size: 15px;
  }
 
 
@@ -879,6 +878,8 @@ MEDIA QUERIES
     height: 292px;
     }
 
+
+
   .left-img, .right-img {
     padding-right: 25px;
     padding-left: 25px;
@@ -951,6 +952,11 @@ MEDIA QUERIES
 }
   .contact-btn{
     width: 20%;
+}
+  #welcome-section{
+  position: relative;
+}
+
 
 
 
