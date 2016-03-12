@@ -89,7 +89,7 @@ SLIDER STYLES
 MINI-HEADER STYLES
 ---------------------------------------------------*/
 .mini-header{
-  height: 80px;
+  height: 50px;
   transition: all .7s ease;
   -webkit-transition: all .7s ease;
   background-color: #333;
@@ -99,29 +99,12 @@ MINI-HEADER STYLES
   z-index: 1500;
 }
 
-.mini-header-small{
-  height: 50px;
-  -webkit-transition: all .7s ease;
-  transition: all .7s ease;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1500;
-}
+
 
 .logo-container {
-  height: 80px;
+  height: 50px;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1500;
-}
-
-.logo-container-small {
-  height: 50px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -207,13 +190,6 @@ nav{
   transition: background-color 0.3s ease;
 }
 
-nav#nav-small{
-  margin-top:24px;
-  background-color: #423F3F;
-  position: fixed;
-  top:25px
-  z-index:300;
-}
 
 nav ul a:hover{
   background-color: transparent;

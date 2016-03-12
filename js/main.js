@@ -36,15 +36,15 @@ $(document).ready(function(){
   // CREATES STICKY NAVBAR
   $(window).scroll(function() {
     if( $(this).scrollTop() > $('header').height()-105) {
-      $('nav#nav').addClass('scroll');
+      $('nav').addClass('scroll');
     } else {
-      $('nav#nav').removeClass('scroll');
+      $('nav').removeClass('scroll');
     }
-    if( $(this).scrollTop() > $('header').height()-140) {
-      $('nav#nav').addClass('scroll-color');
-    } else {
-      $('nav#nav').removeClass('scroll-color');
-    }
+    // if( $(this).scrollTop() > $('header').height()-140) {
+    //   $('nav#nav').addClass('scroll-color');
+    // } else {
+    //   $('nav#nav').removeClass('scroll-color');
+    // }
   });
 
   $(window).scroll(function() {
