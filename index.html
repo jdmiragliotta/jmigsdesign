@@ -28,7 +28,7 @@
   <!-- SqueezeBox -->
   <link rel="stylesheet" href="css/sb_style.css">
   <!-- Custom CSS -->
-  <link href='css/styles.css' rel='stylesheet'>
+  <link href='css/styles-busted.css' rel='stylesheet'>
 </head>
 <body>
  <div id='index'class="anchor"></div>
@@ -37,7 +37,7 @@
       <div class='col l4 offset-l4 s12'>
         <a href='#index' id='nav-name' class='logo valign smoothScroll nav-shrink'>JMIGS<span class='design-logo'>DESIGN</span></a>
       </div>
-      <div class="col l4">
+      <div class="col l4 hide-on-small-only">
         <div class=''>
           <ul class='social-nav right'>
             <li><a href="http://facebook.com/jmigsdesign" target="_blank" class="social-reset nav-shrink"><span class="fa fa-facebook-official fa-lg"></span></a></li>
@@ -52,20 +52,44 @@
     </div>
   </div>
 
- </header>
+  <header>
+    <!--Slider -->
+    <div class='slider'>
+      <ul class='slides'>
+        <li>
+          <img src='images/slideMain.png'>
+          <div id='jmigsdesign'class='slider-heading caption right-align'>
+            <h1>JMIGS<span class='design-logo'>DESIGN</span></h1>
+          </div>
+          <div id='slogan' class='slider-heading caption right-align'>
+            <h4><span id='creativity'>CREATIVITY</span> &#43; </h4>
+          </div>
+          <div id='slogan-code' class='slider-heading caption right-align'>
+            <h4><code>{code};</code></h4>
+          </div>
+        </li>
+        <li>
+          <img src='https://s3.amazonaws.com/jmigsdesign/images/design.png'>
+          <div class='slider-heading caption center-align'>
+            <h3>Where Design</h3>
+          </div>
+        </li>
+        <li>
+          <img src='https://s3.amazonaws.com/jmigsdesign/images/coding.png'>
+          <div class='slider-heading caption center-align'>
+            <h3>Meets Development</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!--End Slider -->
+
   <!-- Navbar -->
-  <nav id='nav' class='main-nav'>
+  <nav id='nav' class='main-nav hide-on-small-only'>
     <div class='row'>
       <div class='col s8 offset-s2'>
-         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id='nav-mobile' class='navbar'>
-          <li class='navlink'><a href='#dev' id="dev-navlink" class='nav-link smoothScroll'><i class='dev-nav-icon nav-icon fa fa-code'></i>Development</a></li>
-          <li class='navlink'><a href='#design' class='nav-link smoothScroll'><i class='nav-icon fa fa-picture-o'></i>Design</a></li>
-          <li class='navlink'><a href='#clients' class='nav-link smoothScroll'><i class='nav-icon fa fa-users'></i>Clients</a></li>
-          <li class='navlink'><a href='#skills' class='nav-link smoothScroll'><i class='nav-icon fa fa-wrench'></i>Skills</a></li>
-          <li class='navlink'><a href="#modal1" class='modal-trigger nav-link smoothScroll'><i class='nav-icon fa fa-envelope-o'></i>Contact</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
           <li class='navlink'><a href='#dev' id="dev-navlink" class='nav-link smoothScroll'><i class='dev-nav-icon nav-icon fa fa-code'></i>Development</a></li>
           <li class='navlink'><a href='#design' class='nav-link smoothScroll'><i class='nav-icon fa fa-picture-o'></i>Design</a></li>
           <li class='navlink'><a href='#clients' class='nav-link smoothScroll'><i class='nav-icon fa fa-users'></i>Clients</a></li>
@@ -75,15 +99,8 @@
       </div>
     </div>
   </nav>
-
-
   <!-- End Navbar -->
 
-  <header class="">
-    <div class="main-callout">
-
-    </div>
-  </header>
   <main>
 
     <section class="mid-row">
@@ -147,7 +164,6 @@
             <h4 id="obsessions-header">My Current Obsessions</h4>
            <div class="row">
               <div class="col s12">
-
                 <a href="https://codyhouse.co">
                   <div id="css3" class="obsessions">
                    <h6>CSS3</h6>
@@ -155,7 +171,6 @@
                    <h6 class="css3-site right">Cody House</h6>
                   </div>
                 </a>
-
                 <a href="http://boxesandarrows.com/">
                   <div id="uxui" class="obsessions">
                    <h6>UX/UI</h6>
@@ -971,7 +986,6 @@
    <!--  <div class='footer-copyright'>
       <div class='container'>
       &copy; 2016 Jeremy Miragliotta | JMigsDesign.com
-
       </div>
     </div> -->
   </footer>
@@ -990,13 +1004,13 @@
   <!-- Materialize JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
   <!-- Custom JS  -->
-  <script src='js/main.js' type='text/javascript'></script>
+  <script src='js/main-busted.js' type='text/javascript'></script>
   <script src='js/welcome.js' type='text/javascript'></script>
   <script src='js/development.js' type='text/javascript'></script>
   <script src='js/skills.js' type='text/javascript'></script>
 
   <script src='js/responsiveslides.min.js' type='text/javascript'></script>
-  <script src='js/customscrollmagic.js' type='text/javascript'></script>
+  <script src='js/customscrollmagic-busted.js' type='text/javascript'></script>
    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
   <script src="js/sb_main.js"></script> <!-- Resource jQuery -->
