@@ -13,22 +13,21 @@ $(document).ready(function(){
   $(".pb-line").hide();
 
  //On Click Event
-  // $("#mid-wel-btn").on("click", function(){
-  //   $("#more").show();
-  //   $("#mid-wel-btn").hide();
-  //   $(".long").fadeOut(1, function(){
-  //       $(".short").show().addClass("animated fadeInLeft");
-  //   });
-  // });
+  $("#mid-wel-btn").on("click", function(){
+    $("#more").show();
+    $("#mid-wel-btn").hide();
+    $(".long").fadeOut(1, function(){
+        $(".short").show().addClass("animated fadeInLeft");
+    });
+  });
 
-  //  $("#more").on("click", function(){
-  //   $("#mid-wel-btn").show();
-  //   $("#more").hide();
-
-  //   $(".short").fadeOut(1, function(){
-  //       $(".long").show().addClass("animated fadeInLeft");
-  //   });
-  // });
+   $("#more").on("click", function(){
+    $("#mid-wel-btn").show();
+    $("#more").hide();
+    $(".short").fadeOut(1, function(){
+        $(".long").show().addClass("animated fadeInLeft");
+    });
+  });
 
 
   $("#css3").on("mouseover", function(){

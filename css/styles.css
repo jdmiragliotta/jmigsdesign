@@ -322,17 +322,26 @@ WELCOME STYLES
 }
  .short>h5{
   color: #a90004;
-  padding-left: 15px;
+  text-align: center;
+
  }
 
  .welcome-p{
-  padding-left: 30px;
- }
+    font-size: 16px;
+    text-align: center;
+    margin-top: -5px;
+  }
 
  small{
   color:#423F3F;
 
   padding-right: 30px;
+ }
+
+ .short{
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.5%;
  }
 
 
@@ -974,6 +983,21 @@ MEDIA QUERIES
   margin-top: 14px;
   }
 
+  .welcome-p{
+    font-size: 16px;
+    margin-top: -5px;
+  }
+
+  .short>h5{
+    font-size: 18px;
+  }
+   .short{
+    width: 29%;
+  }
+
+  .welcome-btn{
+    width:25%;
+  }
 
 
 }
