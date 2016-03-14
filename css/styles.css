@@ -1,4 +1,4 @@
-/*---------------------------------------------------
+  /*---------------------------------------------------
 GLOBAL STYLES
 ---------------------------------------------------*/
 
@@ -228,7 +228,7 @@ ul.navbar {
 .anchor:before {
   content:"";
   display:block;
-  height: 10px;
+  position:relative;
   width: 100%;
 
 }
@@ -254,7 +254,7 @@ WELCOME STYLES
   position: relative;
   background-color: #f2f2f2;
 
-  margin-top: -27px;
+
 }
 
 .welcome-paragraph, .welcome-list{
@@ -343,7 +343,7 @@ DEVELOPMENT STYLES
 }
 #dev-head-container{
   overflow: hidden;
-  height: 248px;
+  height: 240px;
   width: 100%;
   background-color: #f2f2f2;
 }
@@ -352,12 +352,13 @@ DEVELOPMENT STYLES
   font-size: 200px;
   text-align: right;
   position: relative;
-  top: 80px;
+  top: 172px;
   color: #e0e0e0;
 }
 
 #dev.anchor{
   background-color: #f2f2f2;
+  margin-top: -95px;
 }
 
 #slide-container{
@@ -375,7 +376,7 @@ DEVELOPMENT STYLES
 
 #development-section{
   background-color: #E0E0E0;
-  margin-top: -100px;
+
 
 }
 
@@ -518,7 +519,7 @@ PRINT STYLES
 
 #skills-head-container {
     overflow: hidden;
-    height: 348px;
+    height: 250px;
     padding-top: 35px;
     background-color: #e0e0e0;
 }
@@ -526,7 +527,7 @@ PRINT STYLES
 #skills-header{
     color: #f2f2f2;
     font-size: 200px;
-    margin-top: 16px;
+    margin-top: -85px;
     position: relative;
     top: 145px;
 }
@@ -876,9 +877,7 @@ MEDIA QUERIES
   }
   #clients-head-container {
     height: 292px;
-    }
-
-
+ }
 
   .left-img, .right-img {
     padding-right: 25px;
@@ -955,6 +954,9 @@ MEDIA QUERIES
 }
   #welcome-section{
   position: relative;
+}
+#welcome-header{
+  top: 166px;
 }
 
 
