@@ -230,6 +230,7 @@ ul.navbar {
   display:block;
   position:relative;
   width: 100%;
+  height: 10px;
 
 }
 
@@ -529,7 +530,7 @@ PRINT STYLES
     font-size: 200px;
     margin-top: -85px;
     position: relative;
-    top: 145px;
+    top: 148px;
 }
 
 #design.anchor, #skills.anchor{
@@ -819,6 +820,12 @@ footer.page-footer .footer-copyright{
   background-color: rgba(51,51,51,1);
 }
 
+.footer-copyright{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+}
+
 
 
 /*---------------------------------------------------
@@ -869,7 +876,11 @@ MEDIA QUERIES
   }
 
   #dev-head-container {
-    height: 187px;
+    height: 178px;
+  }
+
+  #dev-header{
+    top: 170px;
   }
 
   #welcome-head-container {
@@ -913,7 +924,7 @@ MEDIA QUERIES
   }
 
   #dev.anchor{
-  margin-top: 60px;
+  margin-top: 65px;
   }
 
   .db-tech, .rpsls-tech, .staythenight-tech, .codo-tech{
@@ -948,18 +959,20 @@ MEDIA QUERIES
 
   .bottom-p {
     margin-top: -7px;
-}
+  }
   .contact-btn{
     width: 20%;
-}
+  }
   #welcome-section{
   position: relative;
-}
-#welcome-header{
-  top: 166px;
-}
+  }
+  #welcome-header{
+    top: 166px;
+  }
 
-
+  #skills-header{
+  margin-top: 14px;
+  }
 
 
 
