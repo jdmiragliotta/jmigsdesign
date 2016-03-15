@@ -434,7 +434,6 @@ DEVELOPMENT STYLES
 
 .btn:hover{
    background-color: #a90004;
-
 }
 
 .slide-left{
@@ -534,7 +533,7 @@ PRINT STYLES
     background-color: #e0e0e0;
 }
 
-#skills-header{
+#skills-header {
     color: #f2f2f2;
     font-size: 200px;
     margin-top: -85px;
@@ -542,7 +541,7 @@ PRINT STYLES
     top: 148px;
 }
 
-#design.anchor, #skills.anchor{
+#design.anchor, #skills.anchor {
   background-color: #e0e0e0;
 }
 .skills-body{
@@ -552,8 +551,7 @@ PRINT STYLES
 }
 
 
-#design-section{
-
+#design-section {
   background-color:#f2f2f2;
   position: relative;
   overflow: hidden;
@@ -573,7 +571,6 @@ PRINT STYLES
 .content-img{
   max-width: 100%;
   max-height: 550px;
-
 }
 
 #openingday{
@@ -582,6 +579,7 @@ PRINT STYLES
   background-size: cover;
   background-position: center;
 }
+
 #feelthelove{
   background-image: url("../images/feelthelove.jpg");
   background-repeat: no-repeat;
@@ -632,8 +630,6 @@ PRINT STYLES
   background-position: center;
 }
 
-
-
 /*---------------------------------------------------
 SKILLS STYLES
 ---------------------------------------------------*/
@@ -662,8 +658,8 @@ SKILLS STYLES
 .filter-skills-box{
   text-align: center;
   margin-top: 40px;
-
-
+  height: 400px;
+  position: relative;
 }
 
 .filter-skills-box>a>i{
@@ -678,7 +674,6 @@ SKILLS STYLES
 .main-skill{
   color: #e0e0e0 ;
   transition: all .3s ease-out;
-
 }
 
 .main-skill:hover{
@@ -691,7 +686,7 @@ SKILLS STYLES
   margin-top: -17px;
 }
 
-.skill-paragraph, .client-p-container{
+.skill-paragraph{
   height:75px;
 }
 
@@ -719,13 +714,11 @@ CLIENT STYLES
   opacity: 0;
 }
 
-
 #clients.anchor, #contact.anchor{
   background-color: #f2f2f2;
 }
 
 .clients-body{
-  height: 550px;
   background-color: #e0e0e0;
   margin-top: -120px;
   position: relative;
@@ -733,31 +726,63 @@ CLIENT STYLES
 }
 
 .contact-body{
-
   background-color: #e0e0e0;
   margin-top: -105px;
   position: relative;
   z-index: 2;
 }
 
-.client-icon{
-  color: #f2f2f2;
-}
-.quotes{
-  font-family: "Coustard";
-  font-size: 40px;
-  color:#a90004;
-  position: relative;
-  z-index: 0;
-}
+.client-paragraph{
+  font-size: 22px;
+  padding: 10px 60px;
 
-.client-paragrpah{
-  padding-left:10px;
-  padding-right:10px;
 }
 
 .client{
   margin-top: 10px;
+}
+
+.client-p-container{
+  position: relative;
+}
+
+.quote{
+  position: absolute;
+  font-size: 300px;
+  color: #a90004;
+  z-index: -1;
+  opacity: 0.2;
+  line-height: 1;
+}
+
+#missy-left-quote{
+  left: -6px;
+  top: -14px;
+}
+#missy-right-quote{
+  right: 0px;
+  bottom: -175px;
+}
+
+.client-quote{
+  position: relative;
+  height: 250px;
+  width: 65%;
+  margin-left: 5%;
+}
+
+.client-info-box{
+  height: 250px;
+  width: 30%;
+  text-align: center;
+}
+
+.client-info{
+  margin: 0 auto;
+}
+
+.client-container{
+  height: 250px;
 }
 
 /*---------------------------------------------------
