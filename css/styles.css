@@ -409,12 +409,6 @@ DEVELOPMENT STYLES
   color:#a90004;
 }*/
 
-
-
-.game{
-  height: 602px;
-}
-
 .slide-callout{
   margin-top: 70px;
 }
@@ -450,9 +444,9 @@ DEVELOPMENT STYLES
   padding-left:40px;
 }
 
-#rpsls{
+/*#rpsls{
   padding-top: 75px;
-}
+}*/
 
 .codo{
   color:#a90004;
@@ -742,8 +736,8 @@ CLIENT STYLES
   margin-top: 10px;
 }
 
-.client-p-container{
-  position: relative;
+.client-name{
+  padding-top:20px;
 }
 
 .quote{
@@ -757,18 +751,18 @@ CLIENT STYLES
 
 #missy-left-quote{
   left: -6px;
-  top: -14px;
+  top: -25px;
 }
 #missy-right-quote{
   right: 0px;
-  bottom: -175px;
+  bottom: -162px;
 }
 
 .client-quote{
   position: relative;
   height: 250px;
-  width: 65%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .client-info-box{
@@ -783,6 +777,14 @@ CLIENT STYLES
 
 .client-container{
   height: 250px;
+}
+
+.client-container-main{
+  padding-top: 40px;
+}
+
+.quotes {
+  display: none;
 }
 
 /*---------------------------------------------------
@@ -938,9 +940,9 @@ MEDIA QUERIES
     margin-top: 38px;
   }
 
-  .game{
+/*  .game{
     height: 310px;
-  }
+  }*/
 
   .slide-heading{
     font-size: 30px;
@@ -949,9 +951,9 @@ MEDIA QUERIES
   .slide-text{
     font-size: 15px;
   }
-  #rpsls {
+/*  #rpsls {
     padding-top: 25px;
-  }
+  }*/
 
   #design-head-container {
     height: 170px;
