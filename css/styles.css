@@ -1069,12 +1069,17 @@ MEDIA QUERIES
   ---------------------------------------------------*/
 
   #skills-head-container {
-    height: 237px;
+    height: 263px;
   }
 
   .skill-icon {
     font-size: 50px;
   }
+
+  #skills-header{
+    top: 174px;
+  }
+
 
 }
 
@@ -1270,6 +1275,7 @@ MEDIA QUERIES
 
   #skills-header{
     margin-top: 14px;
+
   }
 
 
