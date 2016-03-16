@@ -11,6 +11,11 @@ $(document).ready(function(){
     $(".rpsls-tech").show().addClass("animated fadeInRight");
   });
 
+  $(".rpsls-tech").hide();
+  $("#rpsls-tech-mobile").on("click", function(){
+    $(".rpsls-tech").show().addClass("animated fadeInRight");
+  });
+
   $(".staythenight-tech").hide();
   $("#staythenight-tech").on("click", function(){
     $(".staythenight-tech").show().addClass("animated fadeInLeft");
@@ -21,6 +26,10 @@ $(document).ready(function(){
     $(".codo-tech").show().addClass("animated fadeInRight");
   });
 
+  $(".codo-tech").hide();
+    $("#codo-tech-mobile").on("click", function(){
+      $(".codo-tech").show().addClass("animated fadeInRight");
+    });
 
 
 }); //End document.ready
