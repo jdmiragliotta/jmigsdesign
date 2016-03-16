@@ -877,39 +877,98 @@ MEDIA QUERIES
   /*---------------------------------------------------
     HEADER STYLES
   ---------------------------------------------------*/
-  ul#nav-mobile.navbar{
-    margin-top: 15px;
-    padding-top: 15px;
-  }
+    ul#nav-mobile.navbar{
+      margin-top: 15px;
+      padding-top: 15px;
+    }
 
-  .logo-container{
-    height: 45px;
-  }
+    .logo-container{
+      height: 45px;
+    }
 
-  .mini-header{
-    height:45px;
-  }
+    .mini-header{
+      height:45px;
+    }
 
-  nav{
-    margin-top: 0px;
-    position: fixed;
-    top: 45px;
-    height: 60px;
-    z-index: 1501;
-    background-color: #423F3F;
-  }
+    nav{
+      margin-top: 0px;
+      position: fixed;
+      top: 45px;
+      height: 60px;
+      z-index: 1501;
+      background-color: #423F3F;
+    }
 
-  nav ul li {
-    margin-top: -10px;
-  }
+    nav ul li {
+      margin-top: -10px;
+    }
 
-  nav ul a{
-    height: 20px;
-  }
+    nav ul a{
+      height: 20px;
+    }
 
-  .nav-icon{
-    margin-top: 0;
-  }
+    .nav-icon{
+      margin-top: 0;
+    }
+
+/*---------------------------------------------------
+    WELCOME STYLES
+  ---------------------------------------------------*/
+    #welcome-head-container {
+      overflow: hidden;
+      height: 146px;
+    }
+
+    #welcome-header {
+      top: 190px;
+    }
+
+    #well-hello {
+      font-size: 32px;
+      padding-left: 0px;
+      padding-top: 10px;
+    }
+
+    .short {
+      width: 100%;
+      margin: 0;
+    }
+
+  /*---------------------------------------------------
+   DEVELOPMENT STYLES
+  ---------------------------------------------------*/
+
+    #dev.anchor {
+      margin-top: -70px;
+    }
+    #dev-header{
+      top:190px;
+    }
+
+    #dev-head-container{
+      height:146px;
+    }
+
+    .left-img {
+      padding-top: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
+   }
+
+    .slide-callout {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .slide-text{
+      width:100%;
+    }
+
+    .slide-link{
+      margin-right: 0;
+    }
+
+
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 769px) {
