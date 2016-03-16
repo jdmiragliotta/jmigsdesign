@@ -1065,11 +1065,15 @@ MEDIA QUERIES
   }
 
   /*---------------------------------------------------
-    SKILLSS STYLES
+    SKILSS STYLES
   ---------------------------------------------------*/
 
   #skills-head-container {
     height: 237px;
+  }
+
+  .skill-icon {
+    font-size: 50px;
   }
 
 }

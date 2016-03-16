@@ -7,6 +7,7 @@ $(document).ready(function(){
   $(".dev-skill").hide();
   $("#full-p").hide();
   $(".full").hide();
+  $(".skill-icon-mobile").hide();
 
   // Roll Over Events
   $("#design-skill").on("mouseover", function(){
@@ -39,6 +40,10 @@ $(document).ready(function(){
     $(".design-skill").show().addClass("animated fadeInLeft");
     $(".dev-skill").show().addClass("animated fadeInLeft");
     $(".full").show().addClass("animated fadeInLeft");
+  });
+
+   $(".skill-design-mobile").on("click", function(){
+    $(".skill-icon-mobile").show().addClass("animated fadeInLeft");
   });
 
 
