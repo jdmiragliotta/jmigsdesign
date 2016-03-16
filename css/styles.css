@@ -1028,7 +1028,49 @@ MEDIA QUERIES
     margin-left: 5px;
   }
 
+/*---------------------------------------------------
+    CLIENTS STYLES
+  ---------------------------------------------------*/
 
+  .client-quote {
+    width: 100%;
+    margin: 0;
+  }
+
+  .client-paragraph{
+    padding: 0;
+    font-size: 15px;
+  }
+
+  .left-quote {
+    left: 20%;
+    top: 63%;
+  }
+
+  .right-quote {
+    right: 20%;
+    bottom: 21%;
+  }
+
+  .quote{
+    font-size: 275px;
+  }
+
+  #clients-header{
+    top: 148px;
+  }
+
+  #clients-head-container{
+    height: 266px;
+  }
+
+  /*---------------------------------------------------
+    SKILLSS STYLES
+  ---------------------------------------------------*/
+
+  #skills-head-container {
+    height: 237px;
+  }
 
 }
 
