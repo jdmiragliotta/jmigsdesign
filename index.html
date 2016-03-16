@@ -32,12 +32,12 @@
 </head>
 <body>
  <div id='index'class="anchor"></div>
-  <div id='mini-header' class='row mini-header'>
+  <div id='mini-header' class='row mini-header hide-on-small-only'>
     <div class='logo-container valign-wrapper'>
       <div class='col l4 offset-l4 s12'>
         <a href='#index' id='nav-name' class='logo valign smoothScroll nav-shrink'>JMIGS<span class='design-logo'>DESIGN</span></a>
       </div>
-      <div class="col l4 hide-on-small-only">
+      <div class="col l4 ">
         <div class=''>
           <ul class='social-nav right'>
             <li><a href="http://facebook.com/jmigsdesign" target="_blank" class="social-reset nav-shrink"><span class="fa fa-facebook-official fa-lg"></span></a></li>
@@ -52,7 +52,16 @@
     </div>
   </div>
 
-  <header>
+
+  <div id='mini-header-mobile' class='row mini-header hide-on-med-and-up'>
+    <div class='logo-container valign-wrapper'>
+      <div class='col l4 offset-l4 s12'>
+        <a href='#index' id='nav-name' class='logo valign smoothScroll'>JMIGS<span class='design-logo'>DESIGN</span></a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hide-on-med-and-down">
     <!--Slider -->
     <div class='slider'>
       <ul class='slides'>
@@ -95,6 +104,20 @@
           <li class='navlink'><a href='#clients' class='nav-link smoothScroll'><i class='nav-icon fa fa-users'></i>Clients</a></li>
           <li class='navlink'><a href='#skills' class='nav-link smoothScroll'><i class='nav-icon fa fa-wrench'></i>Skills</a></li>
           <li class='navlink'><a href="#modal1" class='modal-trigger nav-link'><i class='nav-icon fa fa-envelope-o'></i>Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav id='navbar-mobile' class='main-nav hide-on-med-and-up'>
+    <div class='row'>
+      <div class='col s10 offset-s1'>
+        <ul id='nav-mobile' class='navbar'>
+          <li class='navlink'><a href='#dev' id="dev-navlink" class='nav-link smoothScroll'><i class='dev-nav-icon nav-icon fa fa-code'></i></a></li>
+          <li class='navlink'><a href='#design' class='nav-link smoothScroll'><i class='nav-icon fa fa-picture-o'></i></a></li>
+          <li class='navlink'><a href='#clients' class='nav-link smoothScroll'><i class='nav-icon fa fa-users'></i></a></li>
+          <li class='navlink'><a href='#skills' class='nav-link smoothScroll'><i class='nav-icon fa fa-wrench'></i></a></li>
+          <li class='navlink'><a href="#modal1" class='modal-trigger nav-link'><i class='nav-icon fa fa-envelope-o'></i></a></li>
         </ul>
       </div>
     </div>

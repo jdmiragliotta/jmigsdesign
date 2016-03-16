@@ -99,8 +99,6 @@ MINI-HEADER STYLES
   z-index: 1500;
 }
 
-
-
 .logo-container {
   height: 80px;
   -webkit-transition: all .4s ease;
@@ -869,13 +867,42 @@ footer.page-footer .footer-copyright{
 MEDIA QUERIES
 ---------------------------------------------------*/
 @media (max-width: 480px) {
+  /*---------------------------------------------------
+    HEADER STYLES
+  ---------------------------------------------------*/
+  ul#nav-mobile.navbar{
+    margin-top: 15px;
+    padding-top: 15px;
+  }
 
+  .logo-container{
+    height: 45px;
+  }
+
+  .mini-header{
+    height:45px;
+  }
 }
 
-@media (min-width: 481px) and (max-width: 769px) {
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+
+  /*---------------------------------------------------
+    GLOBAL STYLES
+  ---------------------------------------------------*/
+    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
+      font-size: 125px;
+    }
+  /*---------------------------------------------------
+    HEADER STYLES
+  ---------------------------------------------------*/
   .mini-header a.logo {
     text-align: left;
   }
+
+  .mini-header a.logo {
+    text-align: left;
+  }
+
   .social-nav{
     width: 240px;
   }
@@ -900,115 +927,19 @@ MEDIA QUERIES
     padding-left: 5px;
   }
 
-  #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
-    font-size: 125px;
-  }
-
-  #design-header{
-    margin-top: 40px;
-  }
-
-  #clients-header{
-    top: 125px;
-  }
-
-  #dev-head-container {
-    height: 178px;
-  }
-
-  #dev-header{
-    top: 170px;
-  }
-
+  /*---------------------------------------------------
+    WELCOME STYLES
+  ---------------------------------------------------*/
   #welcome-head-container {
     height: 172px;
   }
-  #clients-head-container {
-    height: 292px;
- }
 
-  .left-img, .right-img {
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-
-  .slide-link{
-    width:90%;
-    margin-bottom: 10px;
-  }
-
-  .slide-callout {
-    margin-top: 38px;
-  }
-
-/*  .game{
-    height: 310px;
-  }*/
-
-  .slide-heading{
-    font-size: 30px;
-  }
-
-  .slide-text{
-    font-size: 15px;
-  }
-/*  #rpsls {
-    padding-top: 25px;
-  }*/
-
-  #design-head-container {
-    height: 170px;
-  }
-
-  #dev.anchor{
-  margin-top: 65px;
-  }
-
-  .db-tech, .rpsls-tech, .staythenight-tech, .codo-tech{
-    font-size: 33px;
-   }
-
-  .db-tech, .staythenight-tech{
-    padding-right: 22px;
-  }
-  .rpsls-tech, .codo-tech{
-    padding-left: 22px;
-  }
-
-  .cd-project-content {
-    top: 9.5%;
-    height: 90%;
-  }
-  .cd-slider li {
-    margin: 4% 10%;
-  }
-  #skills-head-container {
-    height: 293px;
-  }
-
-  .filter-skills-box>a>i {
-    font-size: 160px;
-  }
-
-  .skill-paragraph > p{
-    font-size:13px;
-  }
-
-  .bottom-p {
-    margin-top: -7px;
-  }
-  .contact-btn{
-    width: 20%;
-  }
   #welcome-section{
-  position: relative;
+    position: relative;
   }
+
   #welcome-header{
     top: 166px;
-  }
-
-  #skills-header{
-  margin-top: 14px;
   }
 
   .welcome-p{
@@ -1025,6 +956,85 @@ MEDIA QUERIES
 
   .welcome-btn{
     width:25%;
+  }
+
+
+  /*---------------------------------------------------
+    DEVELOPMENT STYLES
+  ---------------------------------------------------*/
+  #dev-head-container {
+    height: 178px;
+  }
+
+  #dev-header{
+    top: 170px;
+  }
+
+
+  .left-img, .right-img {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .slide-link{
+    width:90%;
+    margin-bottom: 10px;
+  }
+
+  .slide-callout {
+    margin-top: 38px;
+  }
+
+  .slide-heading{
+    font-size: 30px;
+  }
+
+  .slide-text{
+    font-size: 15px;
+  }
+
+  #dev.anchor{
+    margin-top: 65px;
+  }
+
+  .db-tech, .rpsls-tech, .staythenight-tech, .codo-tech{
+    font-size: 33px;
+   }
+
+  .db-tech, .staythenight-tech{
+    padding-right: 22px;
+  }
+
+  .rpsls-tech, .codo-tech{
+    padding-left: 22px;
+  }
+
+  /*---------------------------------------------------
+    DESIGN STYLES
+  ---------------------------------------------------*/
+  #design-header{
+    margin-top: 40px;
+  }
+
+  #design-head-container {
+    height: 170px;
+  }
+
+  .cd-project-content {
+    top: 9.5%;
+    height: 90%;
+  }
+  .cd-slider li {
+    margin: 4% 10%;
+  }
+  /*---------------------------------------------------
+    CLIENTS STYLES
+  ---------------------------------------------------*/
+  #clients-header{
+    top: 125px;
+  }
+  #clients-head-container {
+    height: 292px;
   }
 
   .client-paragraph {
@@ -1045,6 +1055,36 @@ MEDIA QUERIES
     left: 25%;
     top: 70%;
   }
+  /*---------------------------------------------------
+    SKILLS STYLES
+  ---------------------------------------------------*/
+  #skills-head-container {
+    height: 293px;
+  }
+
+  .filter-skills-box>a>i {
+    font-size: 160px;
+  }
+
+  .skill-paragraph > p{
+    font-size:13px;
+  }
+
+  .bottom-p {
+    margin-top: -7px;
+  }
+
+  #skills-header{
+    margin-top: 14px;
+  }
+
+
+/*---------------------------------------------------
+    CONTACT  STYLES
+  ---------------------------------------------------*/
+  .contact-btn{
+    width: 20%;
+  }
 
   .filter-skills-box {
 
@@ -1052,7 +1092,7 @@ MEDIA QUERIES
   }
 
 
-}
+} /* ENDS @media 481 - 768 */
 
 @media (min-width: 769px) and (max-width: 1199px) {
 
