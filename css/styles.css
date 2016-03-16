@@ -520,29 +520,12 @@ PRINT STYLES
 }
 
 
-#skills-head-container {
-    overflow: hidden;
-    height: 250px;
-    padding-top: 35px;
-    background-color: #e0e0e0;
-}
 
-#skills-header {
-    color: #f2f2f2;
-    font-size: 200px;
-    margin-top: -85px;
-    position: relative;
-    top: 148px;
-}
 
 #design.anchor, #skills.anchor {
   background-color: #e0e0e0;
 }
-.skills-body{
-  background-color:#f2f2f2;
-  margin-top: -120px;
 
-}
 
 
 #design-section {
@@ -627,6 +610,27 @@ PRINT STYLES
 /*---------------------------------------------------
 SKILLS STYLES
 ---------------------------------------------------*/
+#skills-head-container {
+    overflow: hidden;
+    height: 345px;
+    padding-top: 35px;
+    background-color: #e0e0e0;
+}
+
+#skills-header {
+    color: #f2f2f2;
+    font-size: 200px;
+    margin-top: 7px;
+    position: relative;
+    top: 148px;
+}
+.skills-body{
+  background-color:#f2f2f2;
+  margin-top: -120px;
+
+}
+
+
 .skill-box{
   width: 200px;
   height: 200px;
@@ -783,6 +787,7 @@ CLIENT STYLES
 
 .client-container-main{
   padding-top: 40px;
+  padding-bottom: 70px;
 }
 
 .quotes{
