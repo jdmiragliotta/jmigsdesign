@@ -19,13 +19,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
   // ADDS ANIMATION TO NAVBAR LINKS
   $('.nav-link').mouseenter(function(){
     $(this).children().filter(':not(:animated)').animate({bottom: '5px'});
@@ -37,9 +30,9 @@ $(document).ready(function(){
   // CREATES STICKY NAVBAR
   $(window).scroll(function() {
     if( $(this).scrollTop() > $('header').height()-80) {
-      $('nav').addClass('scroll');
+      $('nav#nav').addClass('scroll');
     } else {
-      $('nav').removeClass('scroll');
+      $('nav#nav').removeClass('scroll');
     }
     if( $(this).scrollTop() > $('header').height()-140) {
       $('nav#nav').addClass('scroll-color');

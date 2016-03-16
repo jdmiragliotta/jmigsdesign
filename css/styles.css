@@ -867,6 +867,13 @@ footer.page-footer .footer-copyright{
 MEDIA QUERIES
 ---------------------------------------------------*/
 @media (max-width: 480px) {
+
+  /*---------------------------------------------------
+    GLOBAL STYLES
+  ---------------------------------------------------*/
+    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
+      font-size: 62px;
+    }
   /*---------------------------------------------------
     HEADER STYLES
   ---------------------------------------------------*/
@@ -881,6 +888,27 @@ MEDIA QUERIES
 
   .mini-header{
     height:45px;
+  }
+
+  nav{
+    margin-top: 0px;
+    position: fixed;
+    top: 45px;
+    height: 60px;
+    z-index: 1501;
+    background-color: #423F3F;
+  }
+
+  nav ul li {
+    margin-top: -10px;
+  }
+
+  nav ul a{
+    height: 20px;
+  }
+
+  .nav-icon{
+    margin-top: 0;
   }
 }
 
