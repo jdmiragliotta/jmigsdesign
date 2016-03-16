@@ -14,6 +14,7 @@ $(document).ready(function(){
     namespace: "large-btns"
   });
 
+
   $('.modal-trigger').leanModal();
 
 

@@ -729,6 +729,7 @@ CLIENT STYLES
 .client-paragraph{
   font-size: 22px;
   padding: 10px 60px;
+  text-align: center;
 
 }
 
@@ -742,20 +743,21 @@ CLIENT STYLES
 
 .quote{
   position: absolute;
-  font-size: 300px;
+  font-size: 500px;
   color: #a90004;
   z-index: -1;
   opacity: 0.2;
-  line-height: 1;
+  line-height: 0;
 }
 
-#missy-left-quote{
-  left: -6px;
-  top: -25px;
+.left-quote{
+     left: 30%;
+    top: 74%;
 }
-#missy-right-quote{
-  right: 0px;
-  bottom: -162px;
+.right-quote{
+  right: 30%;
+  bottom: -9%;
+
 }
 
 .client-quote{
@@ -783,7 +785,7 @@ CLIENT STYLES
   padding-top: 40px;
 }
 
-.quotes {
+.quotes{
   display: none;
 }
 
