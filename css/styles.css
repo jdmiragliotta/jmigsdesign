@@ -386,8 +386,6 @@ DEVELOPMENT STYLES
 
 #development-section{
   background-color: #E0E0E0;
-
-
 }
 
 .slide{
@@ -443,10 +441,6 @@ DEVELOPMENT STYLES
   padding-top: 50px;
   padding-left:40px;
 }
-
-/*#rpsls{
-  padding-top: 75px;
-}*/
 
 .codo{
   color:#a90004;
@@ -786,7 +780,7 @@ CLIENT STYLES
 }
 
 .client-container-main{
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 70px;
 }
 
@@ -1031,6 +1025,30 @@ MEDIA QUERIES
 
   .welcome-btn{
     width:25%;
+  }
+
+  .client-paragraph {
+    font-size: 17px;
+    padding: 0px 0px;
+  }
+
+  .quote{
+    font-size: 400px;
+  }
+
+  .right-quote{
+    right: 25%;
+    bottom:4%;
+  }
+
+  .left-quote{
+    left: 25%;
+    top: 70%;
+  }
+
+  .filter-skills-box {
+
+    height: 330px;
   }
 
 
