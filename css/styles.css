@@ -252,8 +252,10 @@ WELCOME STYLES
 #welcome-section{
   position: relative;
   background-color: #f2f2f2;
+}
 
-
+.welcome-btn{
+  background-color: #a90004;
 }
 
 .welcome-paragraph, .welcome-list{
@@ -286,7 +288,7 @@ WELCOME STYLES
 .obsessions{
   display: inline-block;
   height: 65px;
-  width:85%;
+  width:100%;
   font-size:20px;
   background-color: #a90004;
   padding: 10px;
@@ -342,6 +344,11 @@ WELCOME STYLES
   margin: 0 1.5%;
  }
 
+ #obsessions-header {
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 /*---------------------------------------------------
 DEVELOPMENT STYLES
@@ -389,21 +396,7 @@ DEVELOPMENT STYLES
 .slide{
   position: absolute;
 }
-/*
-.prev {
-  margin-left: 40px;
-}
-.next {
-  margin-right: 40px;
-  float: right !important
-}
 
-.prev, .next{
-  position: relative;
-  top:0px;
-  z-index: 4;
-  color:#a90004;
-}*/
 
 .slide-callout{
   margin-top: 70px;
@@ -511,14 +504,9 @@ PRINT STYLES
     top: 132px;
 }
 
-
-
-
 #design.anchor, #skills.anchor {
   background-color: #e0e0e0;
 }
-
-
 
 #design-section {
   background-color:#f2f2f2;
@@ -803,41 +791,41 @@ input:not([type])+label:after, input[type=text]+label:after, input[type=password
   margin-bottom: 30px;
 }
 
-  /* label color */
-   .input-field label {
-     color: #a90004;
-   }
-   /* label focus color */
-   .input-field input[type=text]:focus + label,  .input-field input[type=email]:focus + label{
-     color:  #a90004;
-   }
-   /* label underline focus color */
-   .input-field input[type=text]:focus,  .input-field input[type=email]:focus  {
-     border-bottom: 1px solid  #a90004;
-     box-shadow: 0 1px 0 0  #a90004;
-   }
-   /* valid color */
-   .input-field input[type=text].valid,  .input-field input[type=email].valid {
-     border-bottom: 1px solid  #a90004;
-     box-shadow: 0 1px 0 0  #a90004;
-   }
-   /* invalid color */
-   .input-field input[type=text].invalid,  .input-field input[type=email].invalid {
-     border-bottom: 1px solid  #a90004;
-     box-shadow: 0 1px 0 0  #a90004;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color:  #a90004;
-   }
+/* label color */
+ .input-field label {
+   color: #a90004;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label,  .input-field input[type=email]:focus + label{
+   color:  #a90004;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus,  .input-field input[type=email]:focus  {
+   border-bottom: 1px solid  #a90004;
+   box-shadow: 0 1px 0 0  #a90004;
+ }
+ /* valid color */
+ .input-field input[type=text].valid,  .input-field input[type=email].valid {
+   border-bottom: 1px solid  #a90004;
+   box-shadow: 0 1px 0 0  #a90004;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid,  .input-field input[type=email].invalid {
+   border-bottom: 1px solid  #a90004;
+   box-shadow: 0 1px 0 0  #a90004;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color:  #a90004;
+ }
 
-   textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #a90004;
-    box-shadow: 0 1px 0 0 #a90004;
-  }
-  textarea.materialize-textarea:focus:not([readonly])+label {
-    color: #a90004;
-  }
+ textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #a90004;
+  box-shadow: 0 1px 0 0 #a90004;
+}
+textarea.materialize-textarea:focus:not([readonly])+label {
+  color: #a90004;
+}
 
 /*---------------------------------------------------
 FOOTER STYLES
@@ -936,6 +924,10 @@ MEDIA QUERIES
 
     .long{
       font-size: 16px;
+    }
+
+    #obsessions-header{
+      padding-left: 0px;
     }
 
   /*---------------------------------------------------
@@ -1087,9 +1079,9 @@ MEDIA QUERIES
   #design-skill, #development-skill{
     color: #a90004;
   }
-
-
 }
+
+
 
 @media only screen and (min-width: 481px) and (max-width: 769px) {
 
