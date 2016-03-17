@@ -1080,6 +1080,14 @@ MEDIA QUERIES
     top: 174px;
   }
 
+  .skill-paragraph{
+    font-size: 16px;
+  }
+
+  #design-skill, #development-skill{
+    color: #a90004;
+  }
+
 
 }
 

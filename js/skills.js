@@ -7,9 +7,7 @@ $(document).ready(function(){
   $(".dev-skill").hide();
   $("#full-p").hide();
   $(".full").hide();
-  $(".front-icon-mobile").hide();
-  $(".back-icon-mobile").hide();
-  $(".full-icon-mobile").hide();
+
 
   // Roll Over Events
   $("#design-skill").on("mouseover", function(){
@@ -44,17 +42,7 @@ $(document).ready(function(){
     $(".full").show().addClass("animated fadeInLeft");
   });
 
-   $(".front-end-mobile").on("click", function(){
-    $(".front-icon-mobile").show().addClass("animated fadeInLeft");
-  });
 
-  $(".back-end-mobile").on("click", function(){
-    $(".back-icon-mobile").show().addClass("animated fadeInLeft");
-  });
-
-  $(".full-stack-mobile").on("click", function(){
-    $(".full-icon-mobile").show().addClass("animated fadeInLeft");
-  });
 
 
 }); //End document.ready
