@@ -32,6 +32,7 @@ main {
     clear:both;
 }
 
+
 /*---------------------------------------------------
 HEADER STYLES
 ---------------------------------------------------*/
@@ -179,7 +180,7 @@ NAV STYLES
 nav{
   margin-top: -60px;
   height: 60px;
-  z-index: 1501;
+  z-index: 1000;
   background-color: transparent;
   box-shadow: 0 2px 3px rgba(0,0,0,.4);
   -webkit-transition:margin-bottom 0.5s ease;
@@ -327,7 +328,7 @@ WELCOME STYLES
  }
 
  .welcome-p{
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     margin-top: -5px;
   }
@@ -1098,10 +1099,6 @@ MEDIA QUERIES
     text-align: left;
   }
 
-  .mini-header a.logo {
-    text-align: left;
-  }
-
   .social-nav{
     width: 240px;
   }
@@ -1295,5 +1292,93 @@ MEDIA QUERIES
 } /* ENDS @media 481 - 768 */
 
 @media (min-width: 769px) and (max-width: 1199px) {
+
+  /*---------------------------------------------------
+    GLOBAL STYLES
+  ---------------------------------------------------*/
+    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
+      font-size: 150px;
+    }
+
+  /*---------------------------------------------------
+   NAV STYLES
+  ---------------------------------------------------*/
+  .mini-header a.logo {
+    text-align: left;
+  }
+
+   .social-nav{
+    width: 240px;
+  }
+
+  #jmigsdesign{
+    left:20%;
+  }
+
+  #slogan{
+    left: 5%;
+  }
+
+  #slogan-code{
+    left:21%;
+  }
+
+  /*---------------------------------------------------
+    HEADER STYLES
+  ---------------------------------------------------*/
+    #welcome-head-container {
+      height:183px;
+    }
+
+  /*---------------------------------------------------
+   DEV STYLES
+  ---------------------------------------------------*/
+
+    #dev-head-container {
+      height:197px;
+    }
+
+
+    #dev.anchor {
+    margin-top: 165px;
+  }
+
+   /*---------------------------------------------------
+     DESIGN STYLES
+    ---------------------------------------------------*/
+    #design-head-container {
+      height:179px;
+    }
+
+    /*---------------------------------------------------
+     CLIENT STYLES
+    ---------------------------------------------------*/
+
+    #clients-head-container {
+      height:307px;
+    }
+
+    .client-paragraph {
+      font-size: 18px;
+      padding:0px;
+    }
+
+    .left-quote {
+      left: 20%;
+      top: 75%;
+    }
+
+    .right-quote {
+      right: 20%;
+      bottom: -11%;
+    }
+
+    /*---------------------------------------------------
+     SKILLS STYLES
+    ---------------------------------------------------*/
+
+    #skills-head-container {
+      height:306px;
+    }
 
 }
