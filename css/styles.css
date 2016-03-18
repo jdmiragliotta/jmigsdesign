@@ -626,7 +626,7 @@ SKILLS STYLES
 }
 
 .skill-icon{
-  font-size: 100px;
+  font-size: 70px;
 }
 
 .skill-text{
@@ -637,12 +637,13 @@ SKILLS STYLES
 .filter-skills-box{
   text-align: center;
   margin-top: 40px;
-  height: 400px;
+  min-width: 400px;
   position: relative;
+  margin-bottom: 40px;
 }
 
-.filter-skills-box>a>i{
-  display:block;
+.filter-skills-box>a>i.main-icon{
+
   font-size: 200px;
 }
 
@@ -651,13 +652,7 @@ SKILLS STYLES
 }
 
 .main-skill{
-  color: #e0e0e0 ;
-  transition: all .3s ease-out;
-}
-
-.main-skill:hover{
-  color: #a90004 ;
-  cursor: pointer;
+  color: #a90004;
 
 }
 
@@ -673,6 +668,10 @@ SKILLS STYLES
   position: relative;
   margin-bottom:25px;
   height: 345px;
+}
+
+.skill-div{
+  min-height:40px;
 }
 
 /*---------------------------------------------------
