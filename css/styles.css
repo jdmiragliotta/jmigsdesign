@@ -469,21 +469,26 @@ DEVELOPMENT STYLES
   margin-top: 20px;
 }
 .codo-tech, .rpsls-tech{
-  font-size: 75px;
+  font-size: 52px;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 
 .staythenight-tech, .db-tech{
-  font-size: 75px;
+  font-size: 52px;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-right: 30px;
+  padding-right: 15px;
 }
 
 .svg{
   padding-top:15px;
+}
+
+
+.slider-h5{
+  text-align: right;
 }
 
 
@@ -637,7 +642,7 @@ SKILLS STYLES
 .filter-skills-box{
   text-align: center;
   margin-top: 40px;
-  min-width: 400px;
+ /* min-width: 400px;*/
   position: relative;
   margin-bottom: 40px;
 }
@@ -1284,7 +1289,7 @@ MEDIA QUERIES
 
   .filter-skills-box {
 
-    height: 330px;
+    min-height: 330px;
   }
 
 
