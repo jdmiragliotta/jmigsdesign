@@ -672,7 +672,7 @@ SKILLS STYLES
 .skills-row{
   position: relative;
   margin-bottom:25px;
-  height: 345px;
+  min-height: 345px;
 }
 
 .skill-div{
@@ -891,7 +891,7 @@ MEDIA QUERIES
   /*---------------------------------------------------
     GLOBAL STYLES
   ---------------------------------------------------*/
-    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
+    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header, #contact-header{
       font-size: 62px;
     }
   /*---------------------------------------------------
@@ -1120,7 +1120,7 @@ MEDIA QUERIES
   /*---------------------------------------------------
     GLOBAL STYLES
   ---------------------------------------------------*/
-    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
+    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header, #contact-header{
       font-size: 125px;
     }
   /*---------------------------------------------------
@@ -1236,6 +1236,10 @@ MEDIA QUERIES
     padding-left: 22px;
   }
 
+  .container-right{
+    margin-top: 0px;
+  }
+
   /*---------------------------------------------------
     DESIGN STYLES
   ---------------------------------------------------*/
@@ -1306,6 +1310,10 @@ MEDIA QUERIES
 
   }
 
+  .skills-row{
+    min-height: 900px;
+}
+
 
 /*---------------------------------------------------
     CONTACT  STYLES
@@ -1315,8 +1323,15 @@ MEDIA QUERIES
   }
 
   .filter-skills-box {
-
     min-height: 330px;
+  }
+
+  .contact-body{
+    min-height: 415px;
+  }
+
+  #contact-head-container{
+    height: 253px;
   }
 
 
@@ -1327,7 +1342,7 @@ MEDIA QUERIES
   /*---------------------------------------------------
     GLOBAL STYLES
   ---------------------------------------------------*/
-    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
+    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header, #contact-header{
       font-size: 150px;
     }
 
@@ -1411,5 +1426,7 @@ MEDIA QUERIES
     #skills-head-container {
       height:306px;
     }
+
+
 
 }
