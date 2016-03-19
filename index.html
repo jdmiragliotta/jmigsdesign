@@ -103,7 +103,7 @@
           <li class='navlink'><a href='#design' class='nav-link smoothScroll'><i class='nav-icon fa fa-picture-o'></i>Design</a></li>
           <li class='navlink'><a href='#clients' class='nav-link smoothScroll'><i class='nav-icon fa fa-users'></i>Clients</a></li>
           <li class='navlink'><a href='#skills' class='nav-link smoothScroll'><i class='nav-icon fa fa-wrench'></i>Skills</a></li>
-          <li class='navlink'><a href="#modal1" class='modal-trigger nav-link'><i class='nav-icon fa fa-envelope-o'></i>Contact</a></li>
+          <li class='navlink'><a href='#contact' class='nav-link smoothScroll'><i class='nav-icon fa fa-envelope-o'></i>Contact</a></li>
         </ul>
       </div>
     </div>
@@ -117,7 +117,7 @@
           <li class='navlink'><a href='#design' class='nav-link smoothScroll'><i class='nav-icon fa fa-picture-o'></i></a></li>
           <li class='navlink'><a href='#clients' class='nav-link smoothScroll'><i class='nav-icon fa fa-users'></i></a></li>
           <li class='navlink'><a href='#skills' class='nav-link smoothScroll'><i class='nav-icon fa fa-wrench'></i></a></li>
-          <li class='navlink'><a href="#modal1" class='modal-trigger nav-link'><i class='nav-icon fa fa-envelope-o'></i></a></li>
+          <li class='navlink'><a href='#contact' class='nav-link smoothScroll'><i class='nav-icon fa fa-envelope-o'></i></a></li>
         </ul>
       </div>
     </div>
@@ -296,7 +296,7 @@
                       <a href="https://github.com/jdmiragliotta/RockPaperScissors" target"_blank" id="rpsls-tech" class="slide-link waves-effect waves-light btn">Github Repo</a>
                     </div>
 
-                    <div class="icon-container right">
+                    <div class="icon-container right container-right">
                      <h5 class="slider-h5">Technologies Used:</h5>
                       <i class="devicons devicons-html5 rpsls-tech"></i>
                       <i class="devicons devicons-css3 rpsls-tech"></i>
@@ -386,7 +386,7 @@
                       <a href="https://github.com/jdmiragliotta/todolist" target="_blank" id="codo-tech" class="slide-link waves-effect waves-light btn">Github Repo</a>
                     </div>
 
-                     <div class="icon-container right">
+                     <div class="icon-container right container-right">
                       <h5 class="slider-h5">Technologies Used:</h5>
                       <i class="devicons devicons-html5 codo-tech"></i>
                       <i class="devicons devicons-css3 codo-tech"></i>
@@ -804,36 +804,49 @@
       </div>
     </section>
 
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal bottom-sheet">
-    <div class="modal-content">
-      <h4>Shoot Me A Message</h4>
-      <div class='row'>
-        <form class='col s12'>
-          <div class='row'>
-            <div class='input-field col l6 s12'>
-              <i class='material-icons prefix'>account_circle</i>
-              <input id='icon_prefix' type='text' class='validate' required= aria-required='true'>
-              <label for='icon_prefix'>Name</label>
-            </div>
-            <div class='input-field col l6 s12'>
-              <i class='material-icons prefix'>email</i>
-              <input id='email' type='email' class='validate' required="true" aria-required='true'>
-              <label for='email' data-error='Please Enter Valid Email' data-success='Perfect!'>Email</label>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='input-field col l12 s12'>
-              <i class='material-icons prefix'>mode_edit</i>
-              <textarea id='textarea1' class='materialize-textarea'></textarea>
-              <label for='textarea1'>Message</label>
-            </div>
-          </div>
-          <a href='#' class='slide-link contact-btn waves-effect waves-light btn right'>Send</a>
-        </form>
+    <section class="mid-row">
+      <div id="contact-scene"></div>
+      <div id='contact' class='anchor'></div>
+      <div id="contact-head-container">
+        <h1 id="contact-header">Contact</h1>
       </div>
-    </div>
-  </div>
+    </section>
+
+    <section id="contact-section">
+      <div class="container-fluid">
+        <div class="contact-body">
+          <div class="container">
+            <div class="row">
+              <h4 id="message-header">Shoot Me A Message</h4>
+              <div class='row'>
+                <form class='col s12'>
+                  <div class='row'>
+                    <div class='input-field col l6 s12'>
+                      <i class='material-icons prefix'>account_circle</i>
+                      <input id='icon_prefix' type='text' class='validate' required= aria-required='true'>
+                      <label for='icon_prefix'>Name</label>
+                    </div>
+                    <div class='input-field col l6 s12'>
+                      <i class='material-icons prefix'>email</i>
+                      <input id='email' type='email' class='validate' required="true" aria-required='true'>
+                      <label for='email' data-error='Please Enter Valid Email' data-success='Perfect!'>Email</label>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class='input-field col l12 s12'>
+                      <i class='material-icons prefix'>mode_edit</i>
+                      <textarea id='textarea1' class='materialize-textarea'></textarea>
+                      <label for='textarea1'>Message</label>
+                    </div>
+                  </div>
+                  <a href='#' class='slide-link contact-btn waves-effect waves-light btn right'>Send</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 

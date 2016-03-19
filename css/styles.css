@@ -672,7 +672,7 @@ SKILLS STYLES
 .skills-row{
   position: relative;
   margin-bottom:25px;
-  height: 345px;
+  min-height: 345px;
 }
 
 .skill-div{
@@ -682,12 +682,12 @@ SKILLS STYLES
 /*---------------------------------------------------
 CLIENT STYLES
 ---------------------------------------------------*/
-#clients-head-container, #contact-head-container{
+#clients-head-container{
   overflow: hidden;
   height: 346px;
   background-color: #f2f2f2;
 }
-#clients-header, #contact-header{
+#clients-header{
   color: #e0e0e0;
   font-size: 200px;
   margin-top: 70px;
@@ -697,7 +697,7 @@ CLIENT STYLES
   opacity: 0;
 }
 
-#clients.anchor, #contact.anchor{
+#clients.anchor{
   background-color: #f2f2f2;
 }
 
@@ -708,12 +708,6 @@ CLIENT STYLES
   z-index: 2;
 }
 
-.contact-body{
-  background-color: #e0e0e0;
-  margin-top: -105px;
-  position: relative;
-  z-index: 2;
-}
 
 .client-paragraph{
   font-size: 22px;
@@ -782,10 +776,43 @@ CLIENT STYLES
 /*---------------------------------------------------
 CONTACT STYLES
 ---------------------------------------------------*/
+#contact-header{
+  color: #e0e0e0;
+  font-size: 200px;
+  margin-top: 70px;
+  text-align: right;
+  position: relative;
+  top: 120px;
+  opacity: 0;
+}
+
+#contact-head-container{
+  overflow: hidden;
+  height: 310px;
+  background-color: #f2f2f2;
+}
+
+.contact-body{
+  min-height:350px;
+  background-color: #e0e0e0;
+  margin-top: -105px;
+  position: relative;
+  z-index: 2;
+}
+
+#contact.anchor{
+  background-color: #f2f2f2;
+  margin-top: 101px;
+}
+
 .contact-section{
   margin-top:300px;
   position: relative;
   bottom: 0;
+}
+
+#message-header{
+  padding-top:40px;
 }
 input:not([type])+label:after, input[type=text]+label:after, input[type=password]+label:after, input[type=email]+label:after, input[type=url]+label:after, input[type=time]+label:after, input[type=date]+label:after, input[type=datetime-local]+label:after, input[type=tel]+label:after, input[type=number]+label:after, input[type=search]+label:after, textarea.materialize-textarea+label:after {
     width: 130px;
@@ -864,7 +891,7 @@ MEDIA QUERIES
   /*---------------------------------------------------
     GLOBAL STYLES
   ---------------------------------------------------*/
-    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
+    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header, #contact-header{
       font-size: 62px;
     }
   /*---------------------------------------------------
@@ -1062,7 +1089,7 @@ MEDIA QUERIES
   }
 
   /*---------------------------------------------------
-    SKILSS STYLES
+    SKILLS STYLES
   ---------------------------------------------------*/
 
   #skills-head-container {
@@ -1084,6 +1111,24 @@ MEDIA QUERIES
   #design-skill, #development-skill{
     color: #a90004;
   }
+  .skills-body{
+    min-height: 870px;
+  }
+
+/*---------------------------------------------------
+    CONTACT STYLES
+  ---------------------------------------------------*/
+  #contact-head-container{
+    height: 230px;
+  }
+
+  #contact-header{
+    top:142px;
+  }
+
+  .contact-body{
+    min-height: 415px;
+  }
 }
 
 
@@ -1093,7 +1138,7 @@ MEDIA QUERIES
   /*---------------------------------------------------
     GLOBAL STYLES
   ---------------------------------------------------*/
-    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
+    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header, #contact-header{
       font-size: 125px;
     }
   /*---------------------------------------------------
@@ -1209,6 +1254,10 @@ MEDIA QUERIES
     padding-left: 22px;
   }
 
+  .container-right{
+    margin-top: 0px;
+  }
+
   /*---------------------------------------------------
     DESIGN STYLES
   ---------------------------------------------------*/
@@ -1279,6 +1328,10 @@ MEDIA QUERIES
 
   }
 
+  .skills-row{
+    min-height: 900px;
+}
+
 
 /*---------------------------------------------------
     CONTACT  STYLES
@@ -1288,8 +1341,15 @@ MEDIA QUERIES
   }
 
   .filter-skills-box {
-
     min-height: 330px;
+  }
+
+  .contact-body{
+    min-height: 415px;
+  }
+
+  #contact-head-container{
+    height: 253px;
   }
 
 
@@ -1300,7 +1360,7 @@ MEDIA QUERIES
   /*---------------------------------------------------
     GLOBAL STYLES
   ---------------------------------------------------*/
-    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header{
+    #dev-header, #welcome-header, #design-header, #clients-header, #skills-header, #contact-header{
       font-size: 150px;
     }
 
@@ -1384,5 +1444,7 @@ MEDIA QUERIES
     #skills-head-container {
       height:306px;
     }
+
+
 
 }
