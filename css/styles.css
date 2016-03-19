@@ -1089,7 +1089,7 @@ MEDIA QUERIES
   }
 
   /*---------------------------------------------------
-    SKILSS STYLES
+    SKILLS STYLES
   ---------------------------------------------------*/
 
   #skills-head-container {
@@ -1110,6 +1110,24 @@ MEDIA QUERIES
 
   #design-skill, #development-skill{
     color: #a90004;
+  }
+  .skills-body{
+    min-height: 870px;
+  }
+
+/*---------------------------------------------------
+    CONTACT STYLES
+  ---------------------------------------------------*/
+  #contact-head-container{
+    height: 230px;
+  }
+
+  #contact-header{
+    top:142px;
+  }
+
+  .contact-body{
+    min-height: 415px;
   }
 }
 
