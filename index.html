@@ -30,7 +30,7 @@
   <!-- Custom CSS -->
   <link href='css/styles.css' rel='stylesheet'>
 </head>
-<body>
+<body ng-app="portfolioApp">
  <div id='index'class="anchor"></div>
   <div id='mini-header' class='row mini-header hide-on-small-only'>
     <div class='logo-container valign-wrapper'>
@@ -701,36 +701,19 @@
 
     <section id="client-section">
       <div class="container-fluid clients-body">
-        <div class="container client-container-main">
-
-                <div class="missy quotes client-container">
-                  <div class="client-quote valign-wrapper">
-                    <div class="quote left-quote">&ldquo;</div>
-                    <p class="client-paragraph valig "><em>Jeremy was a true professional to work with. He helped to create my logo and business cards for my blog. He understood my design concept, was timely, and the end result was exactly what I had hoped for. I would highly recommend his graphic and web services!</em><br/><span class="client-name right">Missy Somers ||
-                    <a href="http://www.behindtheplates.com/"target="_blank" class="client">Behind The Plates</a></span></p>
-                   <div class="quote right-quote">&rdquo;</div>
-                  </div>
+        <div class="container client-container-main" ng-controller="clientController">
+          <ul>
+            <li ng-repeat="clientsReview in clientsReviews">
+              <div class="quotes client-container">
+                <div class="client-quote valign-wrapper">
+                  <div class="quote left-quote">&ldquo;</div>
+                  <p class="client-paragraph valign "><em>{{clientsReview.quote}}</em><br/><span class="client-name right">{{clientsReview.client}}
+                  <a href="{{clientsReview.url}}"target="_blank" class="client">{{clientsReview.linkText}}</a></span></p>
+                 <div class="quote right-quote">&rdquo;</div>
                 </div>
-
-                <div class="darren quotes client-container">
-                  <div class="client-quote valign-wrapper">
-                    <div class="quote left-quote">&ldquo;</div>
-                    <p class="client-paragraph valign"><em>Jeremy has worked with us on numerous fronts from logo creation to promotional/marketing items for our tournaments and events. He was a pleasure to work with and the final products were just what we wanted. His flexibility, understanding of our goals, and ability to make our vision a reality made the experience stress free. We would recommend Jeremy to anyone for any and all of the services he offers. Thanks for the great work!!</em><br/><span class="client-name right">Darren D'Alconozo ||
-                    <a href="http://www.noideasports.com/"target="_blank" class="client">No Idea Sports</a></span></p>
-                   <div class="quote right-quote">&rdquo;</div>
-                  </div>
-                </div>
-
-                <div class="tim quotes client-container">
-                  <div class="client-quote valign-wrapper">
-                    <div class="quote left-quote">&ldquo;</div>
-                    <p class="client-paragraph valign"><em>Jeremy helped us to create our own logo for Nugent's Prime Meat Market. Jeremy hand drew our "Beef" logo. Even though we changed our minds and direction a few times Jeremy happily applied the changes we suggested. He delivered our final logo on time, and below budget. I would highly recommend Jeremy for all of your design needs!</em><br/><span class="client-name right">Tim Nugent ||
-                    <a href="http://www.nugentsprime.com/"target="_blank" class="client">Nugent's Prime Market</a></span></p>
-                    <div class="quote right-quote">&rdquo;</div>
-                  </div>
-                </div>
-
-          </div>
+              </div>
+            </li>
+          </ul>
          </div>
       </div>
     </section>
@@ -890,6 +873,8 @@
   <script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
   <!-- GreenSock Animation JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js'></script>
+  <!-- Angular JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js" type="text/javascript"></script>
   <!-- ScrollMagic JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
@@ -903,6 +888,7 @@
   <script src='js/clients.js' type='text/javascript'></script>
   <script src='js/responsiveslides.min.js' type='text/javascript'></script>
   <script src='js/customscrollmagic.js' type='text/javascript'></script>
+  <script src='js/app.js' type='text/javascript'></script>
   <!-- SqueezeBox  -->
   <script src="js/sb_main.js"></script> <!-- Resource jQuery -->
   <!-- SmoothScroll -->
