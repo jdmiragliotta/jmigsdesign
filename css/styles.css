@@ -881,6 +881,13 @@ footer.page-footer .footer-copyright{
   width: 100%;
 }
 
+.footer-list{
+  display: inline-block;
+  float-left;
+  padding-right: 15px;
+  font-size: 20px;
+}
+
 
 
 /*---------------------------------------------------
