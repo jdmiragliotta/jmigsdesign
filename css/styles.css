@@ -790,6 +790,7 @@ CONTACT STYLES
   overflow: hidden;
   height: 310px;
   background-color: #f2f2f2;
+  width: 100%;
 }
 
 .contact-body{
